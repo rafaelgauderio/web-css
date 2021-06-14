@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+	<title> tags para inserir recursos multimida, html5 </title>
+	<meta charset="utf-8">	
+</head>
+
+<body>
+
+<h3>Site <a href="https://caniuse.com/" target="_BLANK">caniuse.com </a> útil para quem desenvolve web</h3>
+
+<h2>Exemplo da tag "audio"</h2>
+
+<audio src="http://upload.wikimedia.org/wikipedia/commons/c/c8/Example.ogg" controls preload="auto" loop autoplay>
+    Seu navegador não suporta a tag audio do html5.
+</audio>
+
+
+<h2>Segundo exemplo de audio em formato ogg e mp3</h2>
+<audio controls="controls" loop>
+    <source src="http://www.html5rocks.com/en/tutorials/audio/quick/test.mp3" type="audio/mpeg">
+    <source src="http://www.html5rocks.com/en/tutorials/audio/quick/test.ogg" type="audio/ogg">
+   Seu navegador n&atilde;o suporta a tag audio
+</audio>
+
+<h2>Exemplo da tag video</h2>
+<video src="http://www.html5tutorial.info/media/html5iscool.mp4" width="350" controls>
+    Seu navegador não suporta a tag vídeo.
+</video>
+
+<h2>Segundo exemplo de videos com a tag source</h2>
+<video controls height="300" >
+    <source src="http://www.html5tutorial.info/media/html5iscool.mp4">
+    <source src="http://www.html5tutorial.info/media/html5iscool.ogv">
+    <source src="http://www.html5tutorial.info/media/html5iscool.webm">
+   </video>
+
+<h2>Exemplo de arquivos de legenda com a tag track</h2>
+<video id="video" controls preload>
+    <source src="http://iandevlin.github.io/mdn/video-player-with-captions/video/sintel-short.mp4" type="video/mp4">
+    <source src="http://iandevlin.github.io/mdn/video-player-with-captions/video/sintel-short.webm" type="video/webm">
+    <track label="English" kind="subtitles" srclang="en" src="http://iandevlin.github.io/mdn/video-player-with-captions/captions/vtt/sintel-en.vtt" default>
+    <track label="Deutsch" kind="subtitles" srclang="de" src="http://iandevlin.github.io/mdn/video-player-with-captions/captions/vtt/sintel-de.vtt">
+    <track label="Español" kind="subtitles" srclang="es" src="http://iandevlin.github.io/mdn/video-player-with-captions/captions/vtt/sintel-es.vtt">
+    </video>
+<h2>Exemplo da tag iframe</h2>
+<iframe src="http://www.canoas.ifrs.edu.br/" width="400" height="300">
+    Seu navegador n&atilde;o suporta iframes
+    </iframe>
+    <iframe src="https://www.youtube.com/watch?v=NCiyfOrz4pc&t=309s" width="400" height="300"></iframe>
+<h2>Exemplo da tag object. que permite colocar parametros de entrada</h2>
+<object type="application/x-java-applet" height="300" width="550">
+    <param name="code" value="Sample">
+    <param name="archive" value="https://eyeasme.com/Shayne/HTML5_APPLETS/Sample.jar">
+    Applet failed to run. No Java plug-in was found.
+   </object>
+</body>
+</html>
