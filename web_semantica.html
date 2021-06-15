@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title> Web Semântica e contêineres</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <h2>Web Semântica e contêineres</h2>
+    <h3>tag span</h3>
+    Tag span é muito usada com css e javascript.<br>
+    A tag span é um contêiner genérico para texto.
+    Olá, <span id="username">Visitante</span>! Seja bem‐vindo ao nosso site.
+
+    <h3>tag div</h3>
+    A tag div é a versão block­level da tag span, ou seja, é um contêiner genérico para
+    qualquer coisa. Usado para agrupar e referênciar contêiner.
+
+    <h3>exemplo div de um formulário</h3>
+    <div id="login">
+        <form>
+            Usuário: <input type="text" name="user"><br>
+            Senha: <input type="password" name="pass"><br>
+            <input type="submit">
+        </form>
+    </div>
+
+    <h3>tag section</h3>
+    A tag section define uma seção em um documento. De acordo com a<br>
+    documentação da W3C para o HTML5: "Uma seção é um agrupamento temático<br>
+    de conteúdo, tipicamente com um cabeçalho."
+
+    <section>
+        <h2>Trabalhos Relacionados</h2>
+        <p>Outros autores tentaram executar esta mesma tarefa....</p>
+    </section>
+
+    <h3>tag action</h3>
+    A tag article especifica conteúdo independente e autocontido. Um artigo deve<br>
+    fazer sentido por si só.
+    <article>
+        <h3>Como programar em HTML?</h3>
+        <p>HTML não é uma linguagem de programação, então você não programa em
+            HTML, sorry.</p>
+    </article>
+
+    <h2>tag header</h2>
+    A tag header especifica o cabeçalho de um documento, seção ou artigo.
+    <article>
+        <header>
+            <h3>What Does WWF Do?</h3>
+            <p>WWF's mission:</p>
+        </header>
+        <p>WWF's mission is to stop the degradation of our planet's natural
+            environment,and build a future in which humans live in harmony with nature.</p>
+    </article>
+
+    <h2>tag nav</h2>
+    Define um conjunto de links de navegação.
+    <nav>
+        <a href="/html/" target="_BLANK">HTML</a> |
+        <a href="/css/" target="_BLANK">CSS</a> |
+        <a href="/js/" target="_BLANK">JavaScript</a> |
+        <a href="/jquery/" target="_BLANK">jQuery</a>
+    </nav>
+
+    <h2>tag aside</h2>
+    Define algum conteúdo ao lado, ou de fora do conteúdo de onde ele é colocado.
+
+    <p>O grupo viajou para Joanesburgo no verão.</p>
+    <aside>
+        <h4>Joanerburgo</h4>
+        <p>Cidade que fica localizada na África do Sul.</p>
+    </aside>
+
+    <h2>tag main</h2>
+    <p>Especifica o conteúdo principal de um documento. O conteúdo dentro do main deve ser único no documento.</p>
+
+    CABEÇALHO <br>
+    MENU | <main>CONTEÚDO</main>
+    RODAPÉ
+
+    <h2>tat figure e figcaption</h2>
+    tag figure é usada para agrupamento de imagens.<br>
+    tag figcaption é usada para adicionar legenda
+
+    <figure>
+        <img src="logo.png" alt="IFRS Logo" width="15%">
+        <figcaption>Fig1. ‐ Logo do IFRS.</figcaption>
+    </figure>
+
+    <h2>tag details e tag summary</h2>
+    A tag details especifica detalhes adicionais que o usuário pode ver ou ocultar sob demanda.<br>
+    A tag summary define um cabeçalho visível para os detalhes
+
+    <details>
+        <summary>Copyright 2015‐2021.</summary>
+        <p>Developed by Rafael Le Luca. All right reserved.</p>
+        <p>All content and graphics on this site are intellectual property of Rafael de Luca</p>
+    </details>
+
+    <h2>tag mark</h2>
+    A tag mark define texto marcado, como é feito com uma caneta marca­texto.
+    <p>Não se esqueça de pagar os <mark>boletos atrasados.</mark>Antes que cortem a luz e a água.</p>
+
+    <h2>tag time</h2>
+    A tag time define data e hora em formato legível por humanos. Este elemento<br>
+    também pode ser usado para codificar datas e horários em um formato legível por máquinas
+
+    <p>Chegamos às <time>8:00</time> todas as manhãs para começar o expediente</p>
+    <p>Tenho uma reunião marcada para o <time datetime="2021‐12‐17 15:00"> no dia do meu aniversário, inclusive.
+        </time></p>
+
+
+
+    <h2>tag footer</h2>
+    Especifica um rodapé para um documento, seção ou artigo.
+    <footer>
+        <p>Desenvolvido por Rafael De Luca<br>
+            Contato: <a href="mailto:deluca1712@gmail.com">Enviar email</a><br>
+            Todos os direitos reservados. </p>
+    </footer>
+
+
+
+
+</body>
+
+</html>
