@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <title> Introdução ao html </title>
+    <meta charset="utf-8">
+
+    <style>
+        h1 {
+            text-align: center;
+            color: white;
+            background-color: black;
+            margin: auto;
+        }
+
+        body {
+            background-color: #EEFFFF;
+            /* cor ciano light */
+        }
+
+        li {
+            background-color: #FFEEEE;
+            /* vermelho mais fraco*/
+            border: 1px solid red;
+            margin: 10px;
+        }
+
+        a {
+            color: #850000;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        table {
+            margin: auto;
+            padding: 2px;
+            text-align: center;
+
+        }
+
+        th {
+            border: 1px dashed blue;
+            background-color: #DDDDFF;
+            /* fundo azul do cabeçalho da tabela*/
+        }
+
+        td {
+            border: 1px dashed blue;
+            background-color: #EEEEFF;
+            /* fundo azul mais claro dos dados da tabela*/
+        }
+
+
+
+        .itens_vermelhos {
+            color: red;
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <h1>Minha Página</h1>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Cabeçalho 1</th>
+                <th>Cabeçalho 2</th>
+                <th>Cabeçalho 3</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Célula 1</td>
+                <td class="itens_vermelhos">Célula 2</td>
+                <td>Célula 3</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <p>Isto é um link para o Google:
+        <a href="https://www.google.com.br" target="_BLANK">Google</a>
+    </p>
+
+</body>
+
+
+</html>
