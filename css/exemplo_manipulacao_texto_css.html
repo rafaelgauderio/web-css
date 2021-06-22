@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title> Exemplo de manupilação de texto com css</title>
+    <meta charset="utf-8">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Stick&display=swap');
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            border: 3px solid black;
+            counter-reset: capitulo;
+        }
+
+        div::before {
+            counter-increment: capitulo;
+            content: counter(capitulo) '. ';
+        }
+
+        h1 {
+            border: 5px dashed black;
+            text-align: center;
+        }
+
+        div:nth-of-type(2n+1) {
+            /* apenas nas div impares */
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: 0px;
+            margin-right: 0px;
+            border: 2px solid red;
+
+        }
+
+        div:nth-of-type(2n) {
+            /* apenas nas div pares */
+
+            border: 2px solid blue;
+
+        }
+
+        #text-aling {
+            text-align: center;
+            /*justify, right, left*/
+        }
+
+        #line-height {
+            line-height: 2;
+            /*espaçamento entre linhas */
+            text-indent: 4em;
+            /*recuo do parágrafo*/
+            text-align: justify;
+            font-weight: bold;
+            font-size: x-large;
+        }
+
+        #word-wrap {
+            word-wrap: break-word;
+            /*autoriza a quebrar a palavra no meio para caber*/
+            text-align: justify;
+            color: green;
+        }
+
+        #white-space {
+            white-space: nowrap;
+            /*vai ficar sem quebra de linha*/
+            text-align: center;
+            color: blue;
+        }
+
+        #white-space-pre {
+            font-size: larger;
+            white-space: pre-wrap;
+            /*interpreta todos os espaços e quebras de linhas
+            pre-wrap: útil para escrever código fonte; 
+            pre-line: preserva as quebras de linhas, mas ignora multiplos espaços            
+            */
+            text-align: center;
+            font-weight: bolder;
+            color: white;
+            background-color: black;
+        }
+
+        #word-spacing {
+            word-spacing: 2em;
+            /*espaçamento entre palavras*/
+            letter-spacing: 1em;
+            /*espaçamento entre letras*/
+            text-align: justify;
+            color: black;
+            background-color: tomato;
+        }
+
+        #text-transform {
+
+            text-transform: uppercase;
+            /*lowercase, capitalize */
+            color: black;
+            text-shadow: 2px 2px cyan;
+
+        }
+
+        /* :: significa pseudo elemento */
+
+        #pseudo-elementos {
+            color: white;
+            background-color: black;
+            text-align: justify;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        #pseudo-elementos::first-line {
+            text-decoration: underline;
+
+        }
+
+        #pseudo-elementos::first-letter {
+            font-size: xx-large;
+            font-weight: bold;
+            float: left;
+            padding: 5px;
+        }
+
+        #pseudo-elementos::selection {
+            color: black;
+            background-color: red;
+        }
+
+        #pseudo-elementos::before {
+
+            content: 'ANTES DO TEXTO';
+            color: green;
+
+
+        }
+
+        #pseudo-elementos::after {
+            content: 'FINAL';
+            color: yellow;
+
+        }
+
+        #column {
+            column-count: 3;
+            column-gap: 50px;
+            text-indent: 4em;
+            text-align: justify;
+
+            padding: 10px;
+            font-size: 25px;
+        }
+
+        #column-width {
+            column-width: 250px;
+            text-indent: 2em;
+            text-align: justify;
+
+            padding: 10px;
+            font-size: 20px;
+            background-color: blue;
+            color: white;
+        }
+
+        #fonte-customizada {
+
+            font-family: Stick;
+            font-size: 20px;
+            font-weight: bold;
+
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <h1>Manipulação de texto com css</h1>
+
+    <div id="text-aling">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sit amet augue id enim condimentum rhoncus. Fusce
+        pharetra imperdiet mi sed laoreet.
+        Quisque eu iaculis mi. Vestibulum euismod dapibus lacus id mattis. Etiam metus metus, mattis euismod sagittis
+        et, pulvinar vitae sapien. Suspendisse ut felis at purus posuere scelerisque. Suspendisse fringilla sapien vitae
+        dolor placerat porttitor. Suspendisse ac
+        elementum libero, eget laoreet velit. Nunc sagittis tortor leo, finibus dignissim nibh ultricies vel. Cras
+        placerat leo ac pellentesque aliquam. Fusce eu
+        libero ut risus porta scelerisque. Suspendisse vitae leo in dolor vehicula dictum at vel ex. Donec nec libero a
+        ligula volutpat rutrum eget eu tortor.
+    </div>
+
+    <div id="line-height">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sit amet augue id enim condimentum rhoncus. Fusce
+        pharetra imperdiet mi sed laoreet.
+        Quisque eu iaculis mi. Vestibulum euismod dapibus lacus id mattis. Etiam metus metus, mattis euismod sagittis
+        et, pulvinar vitae sapien. Suspendisse ut felis at purus posuere scelerisque. Suspendisse fringilla sapien vitae
+        dolor placerat porttitor. Suspendisse ac
+        elementum libero, eget laoreet velit. Nunc sagittis tortor leo, finibus dignissim nibh ultricies vel. Cras
+        placerat leo ac pellentesque aliquam. Fusce eu
+        libero ut risus porta scelerisque. Suspendisse vitae leo in dolor vehicula dictum at vel ex. Donec nec libero a
+        ligula volutpat rutrum eget eu tortor.
+    </div>
+
+
+    <div id="word-wrap">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sit amet augue id enim condimentum rhoncus. Fusce
+        pharetra imperdiet mi sed laoreet.
+        rafaelrafaelrafaelrafaelrafaelrafaelrafaelrafaelrafaelrafaelrafaelrafaelrafaelrafaelrafaelrafaelrafelrafaelrafaelrafaelrafaelrafael
+        Quisque eu iaculis mi. Vestibulum euismod dapibus lacus id mattis. Etiam metus metus, mattis euismod sagittis
+        et, pulvinar vitae sapien. Suspendisse ut felis at purus posuere scelerisque. Suspendisse fringilla sapien vitae
+        dolor placerat porttitor. Suspendisse ac
+        elementum libero, eget laoreet velit. Nunc sagittis tortor leo, finibus dignissim nibh ultricies vel. Cras
+        placerat leo ac pellentesque aliquam. Fusce eu
+        libero ut risus porta scelerisque. Suspendisse vitae leo in dolor vehicula dictum at vel ex. Donec nec libero a
+        ligula volutpat rutrum eget eu tortor.
+    </div>
+
+    <div id="white-space">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sit amet augue id enim condimentum rhoncus. Fusce
+        pharetra imperdiet mi sed laoreet.
+        Quisque eu iaculis mi. Vestibulum euismod dapibus lacus id mattis. Etiam metus metus, mattis euismod sagittis
+        et, pulvinar vitae sapien. Suspendisse ut felis at purus posuere scelerisque. Suspendisse fringilla sapien vitae
+        dolor placerat porttitor. Suspendisse ac
+        elementum libero, eget laoreet velit. Nunc sagittis tortor leo, finibus dignissim nibh ultricies vel. Cras
+        placerat leo ac pellentesque aliquam. Fusce eu
+        libero ut risus porta scelerisque. Suspendisse vitae leo in dolor vehicula dictum at vel ex. Donec nec libero a
+        ligula volutpat rutrum eget eu tortor.
+    </div>
+
+    <div id="white-space-pre">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sit amet augue id enim condimentum rhoncus. Fusce
+        pharetra imperdiet mi sed laoreet.
+        Quisque eu iaculis mi. Vestibulum euismod dapibus lacus id mattis. Etiam metus metus, mattis euismod sagittis
+        et, pulvinar vitae sapien. Suspendisse ut felis at purus posuere scelerisque. Suspendisse fringilla sapien vitae
+        dolor placerat porttitor. Suspendisse ac
+        elementum libero, eget laoreet velit. Nunc sagittis tortor leo, finibus dignissim nibh ultricies vel. Cras
+        placerat leo ac pellentesque aliquam. Fusce eu
+        libero ut risus porta scelerisque. Suspendisse vitae leo in dolor vehicula dictum at vel ex. Donec nec libero a
+        ligula volutpat rutrum eget eu tortor.
+    </div>
+
+    <div id="word-spacing">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sit amet augue id enim condimentum rhoncus. Fusce
+        pharetra imperdiet mi sed laoreet.
+        Quisque eu iaculis mi. Vestibulum euismod dapibus lacus id mattis. Etiam metus metus, mattis euismod sagittis
+        et, pulvinar vitae sapien. Suspendisse ut felis at purus posuere scelerisque. Suspendisse fringilla sapien vitae
+        dolor placerat porttitor. Suspendisse ac
+        elementum libero, eget laoreet velit. Nunc sagittis tortor leo, finibus dignissim nibh ultricies vel. Cras
+        placerat leo ac pellentesque aliquam. Fusce eu
+        libero ut risus porta scelerisque. Suspendisse vitae leo in dolor vehicula dictum at vel ex. Donec nec libero a
+        ligula volutpat rutrum eget eu tortor.
+    </div>
+
+    <div id="text-transform">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sit amet augue id enim condimentum rhoncus. Fusce
+        pharetra imperdiet mi sed laoreet.
+        Quisque eu iaculis mi. Vestibulum euismod dapibus lacus id mattis. Etiam metus metus, mattis euismod sagittis
+        et, pulvinar vitae sapien. Suspendisse ut felis at purus posuere scelerisque. Suspendisse fringilla sapien vitae
+        dolor placerat porttitor. Suspendisse ac
+        elementum libero, eget laoreet velit. Nunc sagittis tortor leo, finibus dignissim nibh ultricies vel. Cras
+        placerat leo ac pellentesque aliquam. Fusce eu
+        libero ut risus porta scelerisque. Suspendisse vitae leo in dolor vehicula dictum at vel ex. Donec nec libero a
+        ligula volutpat rutrum eget eu tortor.
+    </div>
+
+    <div id="pseudo-elementos">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sit amet augue id enim condimentum rhoncus. Fusce
+        pharetra imperdiet mi sed laoreet.
+        Quisque eu iaculis mi. Vestibulum euismod dapibus lacus id mattis. Etiam metus metus, mattis euismod sagittis
+        et, pulvinar vitae sapien. Suspendisse ut felis at purus posuere scelerisque. Suspendisse fringilla sapien vitae
+        dolor placerat porttitor. Suspendisse ac
+        elementum libero, eget laoreet velit. Nunc sagittis tortor leo, finibus dignissim nibh ultricies vel. Cras
+        placerat leo ac pellentesque aliquam. Fusce eu
+        libero ut risus porta scelerisque. Suspendisse vitae leo in dolor vehicula dictum at vel ex. Donec nec libero a
+        ligula volutpat rutrum eget eu tortor.
+    </div>
+
+    <div id="column">
+
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sit amet augue id enim condimentum rhoncus. Fusce
+        pharetra imperdiet mi sed laoreet.
+        Quisque eu iaculis mi. Vestibulum euismod dapibus lacus id mattis. Etiam metus metus, mattis euismod sagittis
+        et, pulvinar vitae sapien. Suspendisse ut felis at purus posuere scelerisque. Suspendisse fringilla sapien vitae
+        dolor placerat porttitor. Suspendisse ac
+        elementum libero, eget laoreet velit. Nunc sagittis tortor leo, finibus dignissim nibh ultricies vel. Cras
+        placerat leo ac pellentesque aliquam. Fusce eu
+        libero ut risus porta scelerisque. Suspendisse vitae leo in dolor vehicula dictum at vel ex. Donec nec libero a
+        ligula volutpat rutrum eget eu tortor.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sit amet augue id enim condimentum rhoncus. Fusce
+        pharetra imperdiet mi sed laoreet.
+        Quisque eu iaculis mi. Vestibulum euismod dapibus lacus id mattis. Etiam metus metus, mattis euismod sagittis
+        et, pulvinar vitae sapien. Suspendisse ut felis at purus posuere scelerisque. Suspendisse fringilla sapien vitae
+        dolor placerat porttitor. Suspendisse ac
+        elementum libero, eget laoreet velit. Nunc sagittis tortor leo, finibus dignissim nibh ultricies vel. Cras
+        placerat leo ac pellentesque aliquam. Fusce eu
+        libero ut risus porta scelerisque. Suspendisse vitae leo in dolor vehicula dictum at vel ex. Donec nec libero a
+        ligula volutpat rutrum eget eu tortor.
+
+    </div>
+
+    <div id="column-width">
+
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sit amet augue id enim condimentum rhoncus. Fusce
+        pharetra imperdiet mi sed laoreet.
+        Quisque eu iaculis mi. Vestibulum euismod dapibus lacus id mattis. Etiam metus metus, mattis euismod sagittis
+        et, pulvinar vitae sapien. Suspendisse ut felis at purus posuere scelerisque. Suspendisse fringilla sapien vitae
+        dolor placerat porttitor. Suspendisse ac
+        elementum libero, eget laoreet velit. Nunc sagittis tortor leo, finibus dignissim nibh ultricies vel. Cras
+        placerat leo ac pellentesque aliquam. Fusce eu
+        libero ut risus porta scelerisque. Suspendisse vitae leo in dolor vehicula dictum at vel ex. Donec nec libero a
+        ligula volutpat rutrum eget eu tortor.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sit amet augue id enim condimentum rhoncus. Fusce
+        pharetra imperdiet mi sed laoreet.
+        Quisque eu iaculis mi. Vestibulum euismod dapibus lacus id mattis. Etiam metus metus, mattis euismod sagittis
+        et, pulvinar vitae sapien. Suspendisse ut felis at purus posuere scelerisque. Suspendisse fringilla sapien vitae
+        dolor placerat porttitor. Suspendisse ac
+        elementum libero, eget laoreet velit. Nunc sagittis tortor leo, finibus dignissim nibh ultricies vel. Cras
+        placerat leo ac pellentesque aliquam. Fusce eu
+        libero ut risus porta scelerisque. Suspendisse vitae leo in dolor vehicula dictum at vel ex. Donec nec libero a
+        ligula volutpat rutrum eget eu tortor.
+
+    </div>
+
+    <div id="fonte-customizada">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sit amet augue id enim condimentum rhoncus. Fusce
+        pharetra imperdiet mi sed laoreet.
+        Quisque eu iaculis mi. Vestibulum euismod dapibus lacus id mattis. Etiam metus metus, mattis euismod sagittis
+        et, pulvinar vitae sapien. Suspendisse ut felis at purus posuere scelerisque. Suspendisse fringilla sapien vitae
+        dolor placerat porttitor. Suspendisse ac
+        elementum libero, eget laoreet velit. Nunc sagittis tortor leo, finibus dignissim nibh ultricies vel. Cras
+        placerat leo ac pellentesque aliquam. Fusce eu
+        libero ut risus porta scelerisque. Suspendisse vitae leo in dolor vehicula dictum at vel ex. Donec nec libero a
+        ligula volutpat rutrum eget eu tortor.
+    </div>
+
+
+</body>
+
+</html>
