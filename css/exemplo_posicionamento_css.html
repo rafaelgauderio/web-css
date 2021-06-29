@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title> Exemplo posicionamento css</title>
+        <meta charset="utf-8">
+
+        <style>
+
+        body {
+            margin: 0;
+        }
+        h1 {
+            border: 2px solid violet;
+            padding: auto;            
+            text-align: center;
+        }
+
+        section {
+            border: 1px solid blue;            
+            overflow: scroll hidden; /*horizontal vertical*/
+            height: auto; 
+            background-color: aqua;
+        }
+
+        div {
+            border: 1px solid black;
+            width: 100px;            
+            height: 300px;
+            float: left;
+            padding: 5px;   
+            margin: 5px;  
+            /* box-sizing: border-box;   dae não precisaria descontar as bordas e padding do calc */
+                        
+            
+        }      
+
+        #vermelha {
+            border-style: 2px dotted blue;
+            background-color: red;
+
+        }       
+
+        #clearboth { /*limpa todos os float*/
+            border: 1px solid red;
+            background-color: blueviolet;
+            width:  px;
+            clear: both;           
+        }
+
+        #visibility-hidden {
+            visibility: hidden;
+            border:1px solid green;
+            width:200px;
+        }  
+
+        #display-none {
+            display: none;
+            border: 1px solid blue;
+        }
+
+        #display-block { /*com display é possivel mudar a natureza das tags, de inline para block level e vice-versa */
+            display:block;
+            border: 1px solid yellow;
+            width: 400px;
+        }
+
+        #display-inline-block {
+            display:inline-block;
+            border: 1px solid green;
+            height: auto;
+            width: 100%;
+            
+        }
+        #display-widht-700px {
+            border: 1px solid blue;
+            width: 700px;
+            height: auto;
+        }
+
+        #display-ao-lado-esquerdo-7OOpx{ /*tem que diminuir mais 4px de cada borda e mais 20px de cada padding e mais 20px de cada margin */
+            border: 1px solid red;
+            width: calc(100% - 744px);
+            height: auto;  
+
+        }
+
+        /*position (static, absolute, relative, fixed) Por padrão é position static*/
+        #position {
+            border: 2px solid red;            
+            height: 300px;
+            width: 300px;
+            position: relative;            
+        }
+
+        div div {
+            border: 2px solid slateblue;
+            height: 150px;
+            width: 150px;
+            /* position: absolute; /* vai posicionar com relacao ao primeiro elemento que não for static */
+            position: absolute;
+            left: 68px;            
+            top: 68px;       
+
+        }
+
+        #z-index {
+            background-color: yellow;
+            width: 900px;
+            position:relative;
+            z-index: -1; /* seria o eixo z, quanto mais positivo, mais na frente do outro elemento */
+            
+            
+        }
+
+        #z-index-2 {
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+            background-color: blue;                
+            width: 50%;
+            color: white;
+            position: absolute;            
+            left: 800px;
+            top: 50px;
+            text-transform: uppercase;            
+        }
+        
+
+        </style>
+    </head>
+    
+    
+
+
+    <body>  
+        <h1>Exemplo de posicionamento de div com css</h1>
+        <section>
+        texto ANTES da div 
+        <div id="vermelha">     
+        <b>texto DENTRO da div</b>
+        </div>
+        texto DEPOIS da div texto DEPOIS da div texto DEPOIS da div texto DEPOIS da div texto DEPOIS da div texto DEPOIS da div texto DEPOIS da div texto DEPOIS da div texto DEPOIS da div texto DEPOIS da div texto DEPOIS da div texto DEPOIS da div texto DEPOIS da div texto DEPOIS da div texto DEPOIS da div texto DEPOIS da div texto DEPOIS da div texto DEPOIS da div texto DEPOIS da div texto DEPOIS da div texto DEPOIS da div texto DEPOIS da div texto DEPOIS da div texto DEPOIS da div texto DEPOIS da div texto DEPOIS da div texto DEPOIS da div texto DEPOIS da div texto DEPOIS da div texto DEPOIS da div texto DEPOIS da div texto DEPOIS da div texto DEPOIS da div texto DEPOIS da div texto DEPOIS da div texto DEPOIS da div texto DEPOIS da div texto DEPOIS da div texto DEPOIS da div texto DEPOIS da div texto DEPOIS da div texto DEPOIS da div texto DEPOIS da div texto DEPOIS da div texto DEPOIS da div 
+        <br>        
+        Outra Linha DEPOIS div
+
+
+
+        <div id="clearboth">
+            <br>
+            Mais uma linha com texto, onde quebrou o float devido ao clear: both
+            
+        </div>
+        <br><br>
+        Outra linha com texto
+
+        </section>
+        <div id="visibility-hidden">
+            texto escondido
+        </div>
+        texto aparecendo ao lado do hidden
+
+        <div id="display-none">
+            texto que não vai nem aparecer e nem ocupar espaço            
+        </div>
+        <br>texto aparecendo ao lado do display-none<br>
+
+        <div id="display-block">
+            texto DENTRO da display block
+            <b style="display: block">Vai forçar quebrar linha do texto em negrito, mesmo a tag b sendo por default inline</b>
+        </div>
+            
+
+        <div id="display-inline-block">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </div>
+
+        <div id="display-widht-700px">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </div>
+
+        <div id="display-ao-lado-esquerdo-7OOpx">
+            Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.
+         </div>
+
+         <div id="display-inline-block">
+             Texto só pra quebrar uma div
+         </div>        
+
+         <div id="position">
+             Texto dentro
+             <div>Texto da div dentro da div</div>
+         </div>
+
+         <div id="display-inline-block">
+            Texto só pra quebrar uma div
+        </div>
+
+        
+         <div id="z-index">
+            texto dentro da div
+            <div id="z-index-2">
+                div que fica na frente
+            </div>
+        </div>
+        
+        <h3 style="clear: both; margin: 15px"> desenvolvido por Rafael De Luca</h3>
+
+        
+
+         </body>
+</html>

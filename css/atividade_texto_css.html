@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+
+<head>
+    <title>Atividade formatação de texto com css</title>
+    <meta charset="UTF-8">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
+
+        html {
+            height: 100%;
+        }
+
+        body {
+            padding-top: 10%;
+            padding-bottom: 10%;
+
+            font-family: MedievalSharp, Arial;
+            background-image:
+                radial-gradient(transparent, transparent 75%, #7F0200 100%),
+                url('https://www.publicdomainpictures.net/pictures/20000/nahled/seamless-paper-texture.jpg');
+
+
+            background-repeat: repeat, repeat;
+            background-position: center center;
+            background-size: 100%, 100%;
+            background-attachment: fixed;
+
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+
+
+
+        p.primeiro_paragrafo {
+            margin-top: auto;
+            margin-bottom: auto;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: justify;
+            width: 75%;
+            line-height: 150%;
+            padding: 5px;
+            font-size: 15px;
+
+        }
+
+        p.primeiro_paragrafo::first-line {
+            font-weight: bold;
+            text-align: justify;
+
+
+        }
+
+        p.primeiro_paragrafo::first-letter {
+
+            margin-top: 20px;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 400%;
+            float: left;
+            text-align: justify;
+            padding: 10px;
+
+
+        }
+
+
+
+
+        p.demais_paragrafos {
+
+            font-size: 15px;
+            margin-top: auto;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: auto;
+            text-align: justify;
+            width: 75%;
+            height: auto;
+            line-height: 150%;
+            text-indent: 3em;
+            padding: 5px;
+
+        }
+
+        p.demais_paragrafos::first-line {
+            font-weight: bold;
+            text-align: center;
+        }
+
+       
+    </style>
+</head>
+
+
+<body>
+
+    <h1>Título</h1>
+
+    <p class="primeiro_paragrafo">Lorem ipsum felis malesuada imperdiet ac commodo euismod, aliquam velit at quis elit
+        mattis conubia, lorem
+        nunc auctor volutpat platea dictum. per curabitur inceptos lacinia odio velit id primis odio scelerisque,
+        fusce magna class libero iaculis tempus eu fermentum viverra, at varius ut habitant sem sed potenti posuere.
+        sed taciti nibh mollis turpis enim habitasse felis feugiat sed eu, morbi cubilia mi ut neque mauris neque
+        nibh. semper blandit risus fusce fringilla non leo lacus diam erat inceptos mi non magna, posuere viverra
+        quisque amet cubilia sed tempus etiam viverra pretium lorem.
+    </p>
+
+    <p class="demais_paragrafos">Henrerit elementum potenti est luctus aliquam accumsan eu vel sociosqu, mattis
+        porttitor nec sem laoreet eleifend
+        interdum sodales, porttitor dapibus class mauris etiam class rutrum bibendum. a velit in nisl nulla consequat
+        accumsan curabitur, luctus venenatis auctor duis nunc dictumst rhoncus commodo, quisque viverra sed aliquet
+        dictumst vivamus. erat convallis sit ad class elit morbi nibh sociosqu augue himenaeos, posuere id nec ultricies
+        laoreet aenean condimentum scelerisque fringilla molestie lorem, placerat ultrices curae eleifend arcu congue
+        praesent odio litora. molestie senectus mattis ad tristique luctus neque erat tempus molestie purus lobortis
+        amet quis habitant euismod, facilisis mi justo ipsum erat elit ornare semper amet nibh tortor venenatis lacus
+        sem. </p>
+
+    <p class="demais_paragrafos">In conubia erat adipiscing fringilla molestie a est condimentum molestie amet, in
+        ultrices ipsum per vestibulum
+        mattis imperdiet iaculis himenaeos, congue maecenas et eu vestibulum curabitur aenean cras semper. aliquet
+        ligula eros vulputate faucibus quisque ornare class auctor enim maecenas nisi aenean, sed euismod felis
+        venenatis hac sem aenean fermentum mauris nam neque lorem, netus augue molestie leo pulvinar netus ornare
+        potenti volutpat etiam fusce. donec sem eu sed potenti etiam curae vivamus duis luctus, tortor venenatis
+        pharetra suscipit convallis leo placerat. venenatis massa volutpat ante iaculis integer imperdiet habitant est,
+        fames dictumst justo pulvinar elit vitae at ligula pulvinar, volutpat dictum habitant himenaeos mattis cubilia
+        ad. </p>
+    <p class="demais_paragrafos">Fermentum senectus ullamcorper curae aliquet rutrum sapien semper condimentum at lorem,
+        litora mauris morbi
+        platea scelerisque venenatis duis aenean congue, habitasse donec dapibus varius aliquet quis ligula massa
+        mollis. purus habitasse purus hac potenti integer porta ut, himenaeos gravida fusce aptent habitasse euismod
+        justo felis, elit metus tincidunt dictum leo risus. leo aliquet molestie nam fusce turpis elementum posuere
+        felis, primis libero mollis curae sodales condimentum conubia neque, ultricies dui consectetur integer dictumst
+        sed molestie. inceptos purus iaculis primis scelerisque aenean, egestas euismod dapibus molestie metus taciti,
+        ante molestie euismod class. </p>
+
+    <p class="demais_paragrafos">Luctus vivamus eleifend vitae posuere leo enim hendrerit lectus pulvinar massa vitae
+        eleifend leo, senectus
+        sagittis ante ultricies nam inceptos sed gravida enim imperdiet porta. erat semper cras habitant morbi dictum
+        orci ut, rhoncus in phasellus faucibus nunc condimentum felis, habitasse accumsan pharetra dolor orci taciti.
+        velit mollis sit pellentesque augue leo class phasellus rhoncus, porta inceptos nunc adipiscing dapibus
+        hendrerit ante auctor maecenas, libero suscipit cubilia sodales molestie ac ad magna, condimentum aliquam
+        himenaeos cras molestie egestas inceptos. sagittis fermentum etiam condimentum id donec sagittis gravida, fames
+        ligula commodo justo quam in sapien etiam, facilisis enim pellentesque vivamus blandit molestie. </p>
+
+</body>
+
+</html>
