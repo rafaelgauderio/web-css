@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title> Atividade posicionamento css </title>
+    <meta charset="utf-8">
+    <style>
+
+        html, body {
+            margin: 0px;
+        }
+
+       
+        div {
+            font-family: arial;
+            font-size: 20px;
+        }
+        #retangulo_10_esquerda {
+
+            height: 40px;
+            width: 10%;
+            float: left;
+            border-top: 2px solid black;
+            border-bottom: 2px solid black; 
+            border-right: 1px solid black;           
+            box-sizing: border-box;
+            line-height: 40px;
+            text-align: right;
+            
+
+        }
+
+        #retangulo_80 {
+            text-align: center;
+            height: 40px;
+            width: 80%;
+            margin: auto;
+            border-top: 2px solid black;
+            border-bottom: 2px solid black;
+            border-right: 1px solid black;
+            border-left: 1px solid black;
+            line-height: 40px;
+            box-sizing: border-box;
+
+        }
+
+        #retangulo_10_direita {
+
+            text-align: left;
+            float:right;
+            height: 40px;
+            width: 10%;
+            border-top: 2px solid black;
+            border-bottom: 2px solid black;
+            border-left: 1px solid black;
+            line-height: 40px;
+            box-sizing: border-box;
+            
+        }
+
+
+
+       #quadrado_base {
+            
+            margin:auto;
+            height:400px;
+            width: 400px;
+            background-color: red;          
+            position: relative;            
+            box-sizing: border-box;
+            
+            
+            
+        }
+       
+        #quadrado1 {
+            
+            
+            height:200px;
+            width: 200px;
+            background-color: blue;           
+            float: left;
+            border: 1px solid black;
+            box-sizing: border-box;                        
+            
+        }
+
+        #quadrado2 {           
+            
+            float: right;
+            height:200px;
+            width: 200px;
+            background-color: yellow;
+            text-align: right;
+            border: 1px solid black;
+            box-sizing: border-box;
+                                   
+            
+        }
+
+       
+
+        #quadrado3 {            
+            
+            height:200px;
+            width: 200px;
+            background-color: purple;            
+            float:right;
+            text-align: right;            
+            border: 1px solid black;
+            box-sizing: border-box;  
+            display:table-cell;
+            vertical-align: bottom;                   
+            
+        }
+
+        #quadrado4 {            
+            
+            
+            height:200px;
+            width: 200px;
+            background-color: green;           
+            box-sizing: border-box;
+            float:left;  
+            text-align: left;            
+            border: 1px solid black;
+            box-sizing: border-box; 
+            display:table-cell;
+            vertical-align: bottom;                              
+            
+        }    
+
+          #quadrado5 {     
+            
+            position:absolute;
+            height:200px;
+            width: 200px;
+            background-color: white;         
+            text-align: center;
+            line-height: 200px;
+            left: 100px;
+            top: 100px;
+            border: 1px solid black;
+            box-sizing: border-box;
+
+            
+        }    
+
+
+    </style>
+</head>
+
+
+
+
+
+<body>
+    <div id="retangulo_10_esquerda">10%</div>
+    <div id="retangulo_10_direita">10%</div>
+    <div id="retangulo_80">80%</div>
+
+    <br>
+
+    
+        <div id="quadrado_base">
+            <div id="quadrado1">1</div>
+            <div id="quadrado2">2</div>
+            <div id="quadrado4">3</div>           
+            <div id="quadrado3">4</div> 
+            <div id="quadrado5">5</div>                                 
+            
+    </div>
+     
+        
+        
+
+
+    
+
+</body>
+
+</html>
