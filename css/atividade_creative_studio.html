@@ -12,14 +12,14 @@
             padding: 0;
             width: 100%;
             height: 100%;
+            background-color: #F4F4F4;
 
         }
 
 
         #container {
             position: relative;
-            width: 100%;
-            min-width: 1100px;
+            width: 100%;            
             min-height: 100%;
             margin: 0;
             padding: 0;
@@ -39,7 +39,7 @@
 
 
         #header {
-            padding: 20px 0;
+            padding: 10px 0;
             width: 100%;
             background-color: black;
 
@@ -131,23 +131,71 @@
        }
 
        #container-250{
-        height: 250px;
-        background-color: #FE9300;
+
+        height: 350px;
+        background-image: linear-gradient(to right,#F29B00, #E25400);       
         color:white;
-        font-size: 45px;
-        font-weight: bold;
-        padding-left: 20px;
+        font-size: 60px;
+        font-weight: bold;        
         padding-top: 20px;
         box-sizing: border-box;
         text-transform: uppercase;
+        text-align: left;
+        position:relative;        
+        
         
        }
 
-       #width-50 {
+       #width-50-left {           
            display: block; 
-           width: 50%;           
-           display: inline;
+           width: 50%;
+           letter-spacing: 0.05em;                    
+           position:absolute;   
+           box-sizing: border-box;
+           padding-left: 10px;        
+                    
+       }
+
+       #width-50-right {
            
+           width: 50%;    
+           
+           float:right;
+           height:100%; 
+           box-sizing: border-box; 
+           position:relative;       
+       }
+
+       #container-preto {
+           
+           width:100%;
+           background-color: black;
+           height: 30px;           
+           margin: auto;           
+           bottom: 0px;
+           box-sizing: border-box;           
+        
+       }
+
+       #container-cinza {
+           height:100%;
+           width:65%;
+           background-color: #C0C0C0;           
+           position:absolute;           
+           bottom: 0;
+           right: 0;
+           
+
+       }
+
+       #container-azul {
+
+           height:80%;           
+           width: 35%;            
+           background-color: #1e4f78;
+           position:absolute;
+           bottom: 0; 
+           left:-35%;         
        }
 
   
@@ -194,12 +242,18 @@
             <div id="gap-25"></div>
 
             <div id=container-250>
-                <div id="width-50">CREATIVE<br>DESIGN<br>SERVICES</div>
-                
-            </div>       
-        
-        
+                <div id="width-50-left">CREATIVE<br>DESIGN<br>SERVICES<br>
+                    <div id="gap-25"></div>
+                    <div id="container-preto"></div></div>  
 
+                <div id="width-50-right">
+                    <div id="container-cinza"><div id="container-azul"></div></div>
+                    
+
+                </div>
+            </div>      
+        
+        
 
 
         </div>
