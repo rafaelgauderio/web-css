@@ -1,359 +1,336 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
-<head>
-    <title> Atividade posicionamento css </title>
-    <meta charset="utf-8">
-    <style>
-
-
-        div {
-            height: 10px;
-            font-family: arial;
-            font-size: 20px;
-
-        }
-
-        #circulo_cinza {
-
-            width: 250px;
-            height: 250px;
-            border-radius: 50%;
-            background-color: #EEEEEE;
-            margin: auto;
-            border: 2px solid black;
-            box-sizing: border-box;
-        }
-
-        #circulo_verde {
-
-
-            margin-left: 20px;
-            border-radius: 50%;
-            background-color: green;
-            box-sizing: border-box;
-            border: 2px solid black;
-            float: left;
-            height: 70px;
-            width: 70px;
-            text-transform: uppercase;
-            font-size: 40px;
-            align-items: center;
-            text-align: center;
-            box-sizing: border-box;
-            line-height: 70px;
+    <html lang="pt-br">
+
+    <head>
+        <title> Atividade posicionamento css </title>
+        <meta charset="utf-8">
+        <style>
+            
+            div {
+                height: 10px;
+                font-family: arial;
+                font-size: 20px;
+
+            }
+
+            #circulo_cinza {
+
+                width: 250px;
+                height: 250px;
+                border-radius: 50%;
+                background-color: #EEEEEE;
+                margin: auto;
+                padding-top: 20px;
+                border: 2px solid black;
+                box-sizing: border-box;
+            }
+
+            #circulo_azul {
+
+                margin-top: 15px;
+                border: 2px solid black;
+                border-radius: 50%;
+                background-color: blue;
+                box-sizing: border-box;
+                margin: auto;
+                height: 70px;
+                width: 70px;
+                text-transform: uppercase;
+                font-size: 40px;
+                text-align: center;
+                box-sizing: border-box;
+                line-height: 70px;
+            }
+
+            #circulo_verde {
+
+                margin: auto;
+                position: relative;
+                right: -20px;
+                border-radius: 50%;
+                background-color: green;
+                box-sizing: border-box;
+                border: 2px solid black;
+                float: left;
+                height: 70px;
+                width: 70px;
+                text-transform: uppercase;
+                font-size: 40px;
+                text-align: center;
+                box-sizing: border-box;
+                line-height: 70px;
+
+
+
+            }
 
+            #circulo_red {
 
 
-        }
+                margin: auto;
+                position: relative;
+                right: 20px;
+                box-sizing: border-box;
+                border-radius: 50%;
+                background-color: red;
+                box-sizing: border-box;
+                border: 2px solid black;
+                float: right;
+                height: 70px;
+                width: 70px;
+                text-transform: uppercase;
+                font-size: 40px;
+                text-align: center;
+                box-sizing: border-box;
+                line-height: 70px;
 
-        #circulo_red {
 
 
-            margin-right: 20px;
+            }
 
-            box-sizing: border-box;
-            border-radius: 50%;
-            background-color: red;
-            box-sizing: border-box;
-            border: 2px solid black;
-            float: right;
-            height: 70px;
-            width: 70px;
-            text-transform: uppercase;
-            font-size: 40px;
-            align-items: center;
-            text-align: center;
-            box-sizing: border-box;
-            line-height: 70px;
 
 
+            #circulo_amarelo {
+                margin: auto;
+                clear: both;
+                ;
+                margin-top: 70px;
+                border: 2px solid black;
+                border-radius: 50%;
+                background-color: yellow;
+                box-sizing: border-box;
+                height: 70px;
+                width: 70px;
+                text-transform: uppercase;
+                font-size: 40px;
+                text-align: center;
+                box-sizing: border-box;
+                line-height: 70px;
 
-        }
 
-        #circulo_azul {
-            margin-top: 15px;
-            border: 2px solid black;
-            border-radius: 50%;
-            background-color: blue;
-            box-sizing: border-box;
-            margin-left: auto;
-            margin-right: auto;
-            height: 70px;
-            width: 70px;
-            text-transform: uppercase;
-            font-size: 40px;
-            align-items: center;
-            text-align: center;
-            box-sizing: border-box;
-            line-height: 70px;
+            }
 
+            .elipse {
+                position: relative;
+                height: 80px;
+                box-sizing: border-box;
+            }
 
+            .elipse_azul {
 
 
-        }
+                font-size: 20px;
+                width: 60%;
+                height: 40px;
+                border-radius: 50% 0 0 50%;
+                border-top: 2px solid black;
+                border-bottom: 2px solid black;
+                border-left: 2px solid black;
+                background-color: blue;
 
-        #circulo_amarelo {
-            margin-left: auto;
-            margin-right: auto;
-            margin-top: 70px;
-            border: 2px solid black;
-            border-radius: 50%;
-            background-color: yellow;
-            box-sizing: border-box;
-            height: 70px;
-            width: 70px;
-            text-transform: uppercase;
-            font-size: 40px;
-            align-items: center;
-            text-align: center;
-            box-sizing: border-box;
-            line-height: 70px;
+                text-align: right;
+                line-height: 40px;
+                text-transform: lowercase;
+                position: absolute;
+                right: 0;
 
 
-        }
 
-        #elipse {
-            position: relative;
-            height: 80px;
-            box-sizing: border-box;
-        }
 
-        #elipse_azul {
+            }
 
 
-            font-size: 20px;
-            width: 60%;
-            height: 40px;
-            border-radius: 50% 0 0 50%;
-            border-top: 2px solid black;
-            border-bottom: 2px solid black;
-            border-left: 2px solid black;
-            background-color: blue;
 
-            text-align: right;
-            line-height: 40px;
-            text-transform: lowercase;
-            position: absolute;
-            right: 0;
+            .elipse_vermelha {
 
+                font-size: 20px;
+                width: 60%;
+                height: 40px;
+                border-radius: 0 50% 50% 0%;
+                background-color: red;
 
+                text-align: left;
+                border-top: 2px solid black;
+                border-bottom: 2px solid black;
+                border-right: 2px solid black;
+                line-height: 40px;
+                text-transform: lowercase;
+                box-sizing: border-box;
 
 
-        }
+            }
 
 
 
-        #elipse_vermelha {
 
-            font-size: 20px;
-            width: 60%;
-            height: 40px;
-            border-radius: 0 50% 50% 0%;
-            background-color: red;
 
-            text-align: left;
-            border-top: 2px solid black;
-            border-bottom: 2px solid black;
-            border-right: 2px solid black;
-            line-height: 40px;
-            text-transform: lowercase;
-            box-sizing: border-box;
 
+            #retangulo_10_esquerda {
 
-        }
+                height: 40px;
+                width: 10%;
+                float: left;
+                border-top: 2px solid black;
+                border-bottom: 2px solid black;
+                border-right: 1px solid black;
+                box-sizing: border-box;
+                line-height: 40px;
+                text-align: right;
+                box-sizing: border-box;
 
 
+            }
 
+            #retangulo_80 {
+                text-align: center;
+                height: 40px;
+                width: 80%;
+                margin: auto;
+                border-top: 2px solid black;
+                border-bottom: 2px solid black;
+                border-right: 1px solid black;
+                border-left: 1px solid black;
+                line-height: 40px;
+                box-sizing: border-box;
 
+            }
 
+            #retangulo_10_direita {
 
-        #retangulo_10_esquerda {
+                text-align: left;
+                float: right;
+                height: 40px;
+                width: 10%;
+                border-top: 2px solid black;
+                border-bottom: 2px solid black;
+                border-left: 1px solid black;
+                line-height: 40px;
+                box-sizing: border-box;
 
-            height: 40px;
-            width: 10%;
-            float: left;
-            border-top: 2px solid black;
-            border-bottom: 2px solid black;
-            border-right: 1px solid black;
-            box-sizing: border-box;
-            line-height: 40px;
-            text-align: right;
-            box-sizing: border-box;
+            }
 
 
-        }
 
-        #retangulo_80 {
-            text-align: center;
-            height: 40px;
-            width: 80%;
-            margin: auto;
-            border-top: 2px solid black;
-            border-bottom: 2px solid black;
-            border-right: 1px solid black;
-            border-left: 1px solid black;
-            line-height: 40px;
-            box-sizing: border-box;
+            #quadrado_base {
 
-        }
+                margin: auto;
+                height: 400px;
+                width: 400px;                
+                box-sizing: border-box;                
+                
 
-        #retangulo_10_direita {
+            }
 
-            text-align: left;
-            float: right;
-            height: 40px;
-            width: 10%;
-            border-top: 2px solid black;
-            border-bottom: 2px solid black;
-            border-left: 1px solid black;
-            line-height: 40px;
-            box-sizing: border-box;
+            .quadrado {
 
-        }
+                height: 200px;
+                width: 200px;               
+                box-sizing: border-box;
+                display: inline-block;
+                background-color: white;
+                border: 1px solid black;
 
+            }
 
+            #quadrado1 {
 
-        #quadrado_base {
+                float: left;               
+                box-sizing: border-box;
+                
+            }
 
-            margin: auto;
-            height: 400px;
-            width: 400px;            
-            position: relative;
-            box-sizing: border-box;
+            #quadrado2 {
 
-        }
+                               
+                text-align: right;                
+                box-sizing: border-box;
+            }
 
-        #quadrado1 {
 
-            height: 200px;
-            width: 200px;
-            background-color: blue;
-            float: left;
-            border: 1px solid black;
-            box-sizing: border-box;
+            #quadrado3 {                    
+               
+                box-sizing: border-box;
+                line-height: 375px;
+            }
 
-        }
+            #quadrado4 {
 
-        #quadrado2 {
+                float: right;               
+                text-align: right;                
+                box-sizing: border-box;
+                line-height: 375px;
 
-            float: right;
-            height: 200px;
-            width: 200px;
-            background-color: yellow;
-            text-align: right;
-            border: 1px solid black;
-            box-sizing: border-box;
-        }
+            }
 
 
-        #quadrado3 {
+            #quadrado5 {
 
-            height: 200px;
-            width: 200px;
-            background-color: purple;
-            float: right;
-            text-align: right;
-            border: 1px solid black;
-            box-sizing: border-box;
-            display: table-cell;
-            vertical-align: bottom;
-            align-items: baseline;
+                position: relative;
+                left: 100px;
+                top: -300px;
+                text-align: center;
+                line-height: 200px;
+                border: 1px solid black;
+                box-sizing: border-box;
+                
+            }
+        </style>
+    </head>
 
-        }
+    <body>
 
-        #quadrado4 {
 
+        <div id="circulo_cinza">
 
-            height: 200px;
-            width: 200px;
-            background-color: green;
-            box-sizing: border-box;
-            float: left;
-            text-align: left;
-            border: 1px solid black;
-            box-sizing: border-box;
-            display: table-cell;
-            vertical-align: bottom;
-            align-items: baseline;
+            <div id="circulo_azul">X</div>
+            <div id="circulo_verde">Y</div>
+            <div id="circulo_red">A</div>
+            <div id="circulo_amarelo">B</div>
 
-        }
-
-        #quadrado5 {
-
-            position: absolute;
-            height: 200px;
-            width: 200px;
-            background-color: white;
-            text-align: center;
-            line-height: 200px;
-            left: 100px;
-            top: 100px;
-            border: 1px solid black;
-            box-sizing: border-box;
-
-
-
-        }
-    </style>
-</head>
-
-
-
-
-
-<body>
-
-
-    <div id="circulo_cinza">
-
-        <div id="circulo_azul">X</div>
-        <div id="circulo_verde">Y</div>
-        <div id="circulo_red">A</div>
-        <div id="circulo_amarelo">B</div>
-
-    </div>
-
-    <div></div>
-
-    <div id="elipse">
-        <div id="elipse_vermelha">width 60%
-            <div id="elipse_azul">width 60%</div>
         </div>
-        
-    </div>
 
-   
+        <div></div>
 
-    <div id="elipse">
-        <div id="elipse_vermelha">width 60%
-            <div id="elipse_azul">width 60%</div>
+        <div class="elipse">
+            <div class="elipse_vermelha">width 60%
+                <div class="elipse_azul">width 60%</div>
+            </div>
+
         </div>
-    </div>
-
-    <div></div>
-
-
-    <div id="retangulo_10_esquerda">10%</div>
-    <div id="retangulo_10_direita">10%</div>
-    <div id="retangulo_80">80%</div>
-
-    <div>
-
-    </div>
-
-
-    <div id="quadrado_base">
-        <div id="quadrado1">1</div>
-        <div id="quadrado2">2</div>
-        <div id="quadrado4">3</div>
-        <div id="quadrado3">4</div>
-        <div id="quadrado5">5</div>
-
-    </div>
 
 
 
-</body>
+        <div class="elipse">
+            <div class="elipse_vermelha">width 60%
+                <div class="elipse_azul">width 60%</div>
+            </div>
+        </div>
 
-</html>
+        <div></div>
+
+
+        <div id="retangulo_10_esquerda">10%</div>
+        <div id="retangulo_10_direita">10%</div>
+        <div id="retangulo_80">80%</div>
+
+        <div>
+
+        </div>
+
+
+        <div id="quadrado_base">
+            <div id="quadrado1" class="quadrado">1</div>
+            <div id="quadrado2" class="quadrado">2</div>
+            <div id="quadrado4" class="quadrado">4</div>
+            <div id="quadrado3" class="quadrado">3</div>
+            <div id="quadrado5" class="quadrado">5</div>
+
+        </div>
+
+
+
+
+
+    </body>
+
+    </html>
