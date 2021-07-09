@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title> Exemplo com grid css </title>
+    <meta charset="utf-8">
+
+    <style>
+        #primeiro-grid {
+
+            display: grid;
+            grid-template-columns: 400px 300px;
+            /*auto pega o resto da coluna*/
+            grid-template-rows: 100px 200px;
+            height: 500px;
+            widht: 400px;
+            /*gap: 20px 20px vai deixar o espaçamento da linha e da coluna iguai */
+            justify-content: space-around;
+            /*espaçamento igual na horizonal */
+            align-content: space-around;
+            margin: 10px;
+
+        }
+
+        #segundo-grid {
+
+            border: 2px solid green;
+            border-radius: 5px;
+            display: grid;
+            grid-template-columns: 100px auto;
+            grid-template-rows: 30px auto 30px;
+            padding: 20px;
+            height: 400px;
+
+
+
+
+
+
+        }
+
+        div {
+
+            border: 2px solid black;
+
+
+
+        }
+
+        #header,
+        #footer {
+            padding: 5px;
+            grid-column-start: 1;
+            grid-column-end: 3;
+
+        }
+
+        #menu {
+            text-align: center;
+
+        }
+    </style>
+</head>
+
+
+<body>
+    <h1> Exemplo com a tag grid </h1>
+    <div id="primeiro-grid">
+
+        <div>Rafael</div>
+
+        <div>Cláudia</div>
+        <div>Luciana</div>
+        <div>Lara</div>
+
+    </div>
+
+    <div id="segundo-grid">
+        <div id="header">HEADER</div>
+        <div id="menu">MENU</div>
+        <div id="content">CONTENT</div>
+        <div id="footer">FOOTER desenvolvido por <b>Rafael De Luca</b></div>
+
+
+    </div>
+
+</body>
+
+</html>

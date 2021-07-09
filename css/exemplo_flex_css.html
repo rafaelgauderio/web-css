@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title> Exemplo flex com css </title>
+    <meta charset="utf-8">
+
+
+    <style>
+        /*apenas na div de fora*/
+        body {
+
+            border: 3px solid black;
+            margin: 5px;
+            padding: 10px;
+
+        }
+
+        .externa {
+
+            border: 2px solid violet;
+            display: flex;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            /*na horizontal*/
+            height: 100px;
+            align-items: flex-start; /*alinha na vertical */
+            margin: 10px;
+
+
+
+
+
+        }
+
+        .externa2 {
+
+            border: 2px solid green;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            height: 150px;
+            align-items: center;
+            margin: 10px;
+
+        }
+
+        .externa3 {
+
+            border: 2px solid aquamarine;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-evenly;
+            height: 100px;
+            align-items: flex-end;
+            margin: 10px;
+
+
+        }
+
+
+
+        .um {
+            border: 2px solid red;
+
+        }
+
+        .quatro {
+
+            border: 2px solid blue;
+
+        }
+
+        .sete {
+            
+            display: flex;
+            border: 2px solid yellow;
+            flex: 1; /* deixar todos igualmente distriduibos o espaço dentro dos container*/
+            justify-content: center;          
+            align-items: center;            
+            height: 80px;           
+
+        }
+
+        #itens {
+            order: -1; /*item vai pra frente de todos*/
+            flex: 2; /* o dobro de espaço que sobrou para esse item*/
+        }
+
+
+
+
+        h4,
+        h2 {
+            display: inline;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h2>Exemplo dos conceitos da tag flex</h2>
+    <p>Flex adapta as div a tela automaticamente de acordo com a parametrização.<br> Não deve ser usada para fazer o layout de uma página inteira. <br>
+        Para layout de página inteiras, usamos grid.
+    </p>
+
+    <div class="externa">
+        <div class="um">Rafael</div>
+        <div class="um">Claudia</div>
+        <div class="um">Juliana</div>
+    </div>
+
+    <div class="externa2">
+        <div class="quatro">4</div>
+        <div class="quatro">5</div>
+        <div class="quatro">6</div>
+    </div>
+
+    <div class="externa3">
+        <div class="sete">7</div>
+        <div class="sete">8</div>
+        <div class="sete" id="itens">9</div>
+    </div>
+
+
+
+
+    <h4><br>desenvolvido por </h4>
+    <h2>Rafael De Luca</h2>
+</body>
+
+</html>
