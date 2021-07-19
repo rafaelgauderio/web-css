@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Atividade Transform e Transitions</title>
+    <meta charset="utf-8">
+    <style>
+        html,
+        body {
+            perspective: 400px;
+            perspective-origin: 16% 50%;
+            transform-style: preserve-3d;
+            position: relative;
+            height: 100%;
+        }
+
+
+
+        h1,
+        h2 {
+            text-align: center;
+        }
+
+
+
+
+        div {
+
+            font-size: 25px;
+            width: 500px;
+            height: 500px;
+            border: 2px black solid;
+            display: inline-block;
+
+
+
+
+
+        }
+
+        .vinho-1 {
+            background-color: red;
+            position: absolute;
+            box-sizing: border-box;
+            left: 200px;
+
+
+
+        }
+
+        .vinho-2 {
+            background-color: red;
+            position: absolute;
+            left: 700px;
+            box-sizing: border-box;
+
+
+        }
+
+        #pagina-1:hover {
+
+            transform: rotateY(179.5deg);
+
+
+
+        }
+
+
+
+        #pagina-1 {
+
+            z-index: 1;
+            position: absolute;
+            left:200px;
+            background-color: white;
+            transition: transform 2s;
+            box-sizing: border-box;
+            transform-origin: 100% 0;
+            
+            
+            
+
+
+
+
+
+
+        }
+
+        #pagina-2:hover {
+
+            transform: rotateY(-179.5deg);
+
+        }
+
+        #pagina-2 {
+
+            z-index: 1;
+            position: absolute;
+            background-color: white;
+            left: 700px;
+            box-sizing: border-box;
+            transition: transform 2s;
+            transform-origin: 0 0;
+            
+
+
+
+
+        }
+
+        div img {
+
+            display: block;
+            margin-left: auto;
+            margin-right: auto
+        }
+
+        .quadrado-red {
+            width: 100px;
+            height: 100px;
+            border: 2px black solid;
+            background-color: red;
+            transform: rotate(45deg) translateX(40px);
+
+        }
+
+        .quadrado-green {
+            width: 100px;
+            height: 100px;
+            border: 2px black solid;
+            background-color: green;
+            transform: rotate(45deg) translateX(100px) translateY(75px);
+            ;
+        }
+
+        .quadrado-blue {
+            width: 100px;
+            height: 100px;
+            border: 2px black solid;
+            background-color: blue;
+            transform: rotate(45deg) translateX(160px) translateY(150px);
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="vinho-1"></div>
+    <div id="pagina-1">
+        <h1>Página 1</h1><img alt="logo do ifrs canoas" src="http://www.canoas.ifrs.edu.br/site/img/logo_novo.png">
+    </div>
+    <div id="pagina-2">
+        <h1>Página 2</h1>
+        <div class="quadrado-red"></div>
+        <div class="quadrado-green"></div>
+        <div class="quadrado-blue"></div>
+
+
+    </div>
+    <div class="vinho-2"></div>
+
+
+
+</body>
+
+</html>

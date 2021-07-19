@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title> Exemplo de transicoes</title>
+    <meta charset="utf-8">
+    <style>
+        div {
+
+
+
+            text-align: center;
+            line-height: 100px;
+
+            border: 1px solid red;
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+            background-color: yellow;
+
+            margin-right: 5px;
+
+        }
+
+        #blue:hover {
+
+            background-color: blue;
+            transition: background-color 3s 1s;
+
+        }
+
+        #green:hover {
+            background-color: green;
+            border-radius: 50%;
+
+
+
+        }
+
+        #green {
+
+            transition: background-color 4s;
+            transition: border-radius 4s;
+
+
+        }
+
+        #quatro:hover {
+            margin-left: 400px;
+
+        }
+
+        #quatro {
+            transition: margin-left 4s ease-in-out;
+
+
+        }
+
+        input:focus {
+            background-color: blue;
+
+        }
+
+        input {
+            transition: background-color 5s;
+        }
+    </style>
+</head>
+
+
+<body>
+    <h1>Exemplo de transitions</h1>
+    <h2>Fazer as transições serem suaves e não abruptas</h2>
+    <div> 1</div>
+    <div id="blue">2</div>
+    <div id="green">3</div>
+    <div id="quatro">4</div><input>
+
+</body>
+
+</html>
