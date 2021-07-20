@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title> Atividade Responsividade css</title>
+    <meta charset="utf-8">
+    <style>
+        html,
+        body {
+            
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            font-family: arial;
+
+        }
+
+                
+
+        #container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+
+        }
+
+        #header {
+            height: 40px;
+            width: 100%;
+            background-color: black;
+
+        }
+
+        h1 {
+            color: white;
+            padding-left: 20px;
+            line-height: 40px;
+        }
+
+        #header2 {
+            height: 30px;
+            width: 100%;
+            background-color: blue;
+            float: left;
+            line-height: 30px;
+            padding-left: 10px;
+            
+
+        }
+
+        #header2 ul,
+        #header2 li {
+
+            list-style: none;
+            float: left;
+            padding-left: 10px;
+
+        }
+
+        #conteudo {
+            
+            width: 100%;
+            background-color: white;
+            height: 100%;
+        }
+
+
+        .menu {
+            
+            width: 20%;
+            height: 100%;
+            background-color: green;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+
+        }
+
+        .menu ul,
+        .menu li {
+            list-style: none;
+            padding: 10px;
+        }
+
+        #secao {
+
+            
+            position: absolute; 
+            left: 21%;
+            top: 14%;
+            width: 75%; 
+            background-color:red;
+            height: 50px;
+            font-size: 30px;            
+            color: white;
+            padding: 20px;
+               
+                       
+
+        }
+
+
+
+        #footer {            
+            position: fixed;            
+            bottom: 0;
+            width: 100%;
+            height: 25px;
+            background-color: black;
+            text-align: right;
+            color: white;
+            font-size: 20px;
+            line-height: 25px;
+        }
+
+       
+
+     
+
+
+    </style>
+</head>
+
+
+<body>
+
+    <div id="container">
+
+
+        <div id="header"><h1>Título</h1></div>
+        <div id="header2">
+            <li><a href="link1.html">Link 1</a></li>
+            <li><a href="link2.html">Link 2</a></li>
+            <li><a href="link2.html">Link 3</a></li>
+            <li><a href="link4.html">link 4</a></li>
+            <li><a href="link5.html">link 5</a></li>
+            </li>
+
+        </div>
+
+        <div id="conteudo">
+            <div class="menu">
+                <ul>
+                    <li><a href="categoria1.html">Categoria 1</a></li>
+                    <li><a href="categoria2.html">Categoria 2</a></li>
+                    <li><a href="categoria3.html">Categoria 3</a></li>
+                    <li><a href="categoria4.html">Categoria 4</a>
+                    </li>
+
+                </ul>
+                
+
+            </div>
+            <div id="secao"> Seção </div>
+
+            <div class="quadrado"></div>
+            <div class="quadrado"></div>
+            <div class="quadrado"></div>            
+            
+            
+        </div>  
+    
+
+
+
+           
+    </div>
+    <div id="footer">By Eu - 2015</div> 
+
+</body>
+
+</html>
