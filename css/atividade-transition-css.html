@@ -7,23 +7,15 @@
     <style>
         html,
         body {
-            
-           
+
+
             transform-style: preserve-3d;
             position: relative;
             height: 100%;
-            perspective: 1500px;
-            perspective-origin: 50% 50%;
-        }
-
-        body > div {
-
-            
-            margin-top:50px;
-            margin-left:150px;                   
-
+            perspective: 900px;
 
         }
+
 
 
 
@@ -38,11 +30,16 @@
         div {
 
             font-size: 25px;
-            width: 350px;
-            height: 350px;
-            border: 2px black solid;
-            display: inline-block;
-            box-sizing: border-box;
+        }
+
+        #container {
+            transform-style: preserve-3d;
+            position: relative;
+            display: grid;
+            grid-template-columns: 50% 50%;
+            width: 800px;
+            margin: auto;
+            transform: translateZ(-300px) rotateX(20deg);
 
 
 
@@ -50,34 +47,34 @@
 
         }
 
+
+
         .vinho-1 {
-            background-color: red;
-            position: absolute;
+
+            background-color: #800000;
+            border: 1px black solid;
+            width: 400px;
+            height: 400px;
             box-sizing: border-box;
-            left: 200px;
-            
-            
-            
-
-
-
         }
 
         .vinho-2 {
-            background-color: red;
-            position: absolute;
-            left: 550px;
-            box-sizing: border-box;            
-           
-            
-
+            background-color: #800000;
+            border: 1px black solid;
+            width: 400px;
+            height: 400px;
+            left: 400px;
+            box-sizing: border-box;
 
         }
+
+
+
+
 
         #pagina-1:hover {
 
             transform: rotateY(179.5deg);
-            
 
 
 
@@ -87,18 +84,16 @@
 
         #pagina-1 {
 
-           
-            position: absolute;
-            left:200px;
+
+
             background-color: white;
             transition: transform 2s;
-            box-sizing: border-box;
             transform-origin: 100% 0;
-            
-            
-            
-            
-
+            width: 400px;
+            height: 400px;
+            border: 1px black solid;
+            box-sizing: border-box;
+            position: absolute;
 
 
 
@@ -114,18 +109,17 @@
 
         #pagina-2 {
 
-           
-            position: absolute;
+
             background-color: white;
-            left: 550px;
-            box-sizing: border-box;
+
             transition: transform 2s;
             transform-origin: 0 0;
-            
-            
-
-
-
+            border: 1px black solid;
+            width: 400px;
+            height: 400px;
+            position: absolute;
+            left: 400px;
+            box-sizing: border-box;
 
         }
 
@@ -133,7 +127,7 @@
 
             display: block;
             margin-left: auto;
-            margin-right: auto
+            margin-right: auto;
         }
 
         .quadrado-red {
@@ -142,7 +136,7 @@
             border: 2px black solid;
             background-color: red;
             transform: rotate(45deg) translateX(40px);
-            box-sizing: border-box;
+
 
         }
 
@@ -151,9 +145,9 @@
             height: 50px;
             border: 2px black solid;
             background-color: green;
-            transform: rotate(45deg) translateX(70px) translateY(40px);
-            box-sizing: border-box;
-            
+            transform: rotate(45deg) translateX(100px) translateY(-40px);
+
+
         }
 
         .quadrado-blue {
@@ -161,27 +155,36 @@
             height: 50px;
             border: 2px black solid;
             background-color: blue;
-            transform: rotate(45deg) translateX(100px) translateY(80px);
-            box-sizing: border-box;
+            transform: rotate(45deg) translateX(160px) translateY(-80px);
+
         }
     </style>
 </head>
 
 
 <body>
-    <div class="vinho-1"></div>
-    <div class="vinho-2"></div>
-    <div id="pagina-1">
-        <h1>Página 1</h1><img alt="logo do ifrs canoas" src="http://www.canoas.ifrs.edu.br/site/img/logo_novo.png">
-    </div>
-    <div id="pagina-2">
-        <h1>Página 2</h1>
-        <div class="quadrado-red"></div>
-        <div class="quadrado-green"></div>
-        <div class="quadrado-blue"></div>
+
+    <div id="container">
+        <div class="vinho-1"></div>
+
+        <div id="pagina-1">
+            <h1>Página 1</h1><img alt="logo do ifrs canoas" src="http://www.canoas.ifrs.edu.br/site/img/logo_novo.png">
+        </div>
+
+
+
+        <div class="vinho-2"></div>
+
+        <div id="pagina-2">
+            <h1>Página 2</h1>
+            <div class="quadrado-red"></div>
+            <div class="quadrado-green"></div>
+            <div class="quadrado-blue"></div>
+        </div>
 
     </div>
-    
+
+
 
 
 
