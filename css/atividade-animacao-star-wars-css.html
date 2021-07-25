@@ -6,12 +6,13 @@
     <meta name="viewport" content="with=device-width, initial-scale=1.0">
     <style>
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap');
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
       
 
         body {
-            background-color: black;           
-            font-family: Source Sans Pro,arial;
+
+            background-color: black;            
             color: rgba(255, 255, 126, 0.5);            
             position:relative;
             overflow: hidden;
@@ -22,20 +23,24 @@
         .conteudo {
             display: flex;
             height: 100%;
-            width: 60%;
+            width: 50%;
             margin: 0 auto;
             perspective: 500px;
         }
 
-        .texto {
-            margin: 50% 0 0 0;
-            position: relative;
-            font-size: 28px;
+        .texto {    
+
+            font-family: Roboto, Source Sans Pro,arial;
+            font-size: 25px;
             line-height: 2.0em;
             font-weight: bold;
             text-align: justify;
             animation: subir linear forwards;            
-            animation-duration: 60s;
+            animation-duration: 50s;
+            letter-spacing: 0.2;
+            word-spacing: 0.5em;
+            text-indent: 1em;
+            
             
 
         }

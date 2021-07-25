@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title> Exemplo barra de progresso</title>
+        <meta charset="utf-8">
+        <style> 
+        
+        .bola-laranja {
+            
+            height: 200px;
+            width: 200px;            
+            background-color: orange;
+            border-radius: 50%;
+            position:relative
+
+
+        }
+
+        .bola-branca {
+            height:150px;            
+            width: 150px;            
+            background: radial-gradient(orange 50%, white 50%);
+            border-radius: 50%;
+            position:absolute;
+            left:25px;
+            top:25px;
+
+            
+        }
+
+        .bola-amarela {
+            height:150px;            
+            width: 150px;
+            background: linear-gradient(to right, rgba(255,255,0,0.6), rgba(255,255,0,0.1));
+            position: absolute;
+            left:125px;
+            top:25px;
+            border-radius: 50%;
+           
+            
+        }
+
+        .bola-laranja-fundo {
+            height:150px;            
+            width: 150px;
+            background: linear-gradient(to right, orange 30%, transparent 60%);
+            position: absolute;
+            left:125px;
+            top:25px;
+            border-radius: 50%;
+            
+        }
+
+        .texto-logo {
+
+            font-size: 35px;
+            font-family: arial;
+            line-height: 35px;
+            font-weight: bold;
+            position:absolute;
+            left:30px;
+            top:35px;
+        }
+
+        </style>
+    </head>
+    
+    
+    <body>
+        <div class="bola-laranja">
+            <div class="bola-branca"></div>
+            <div class="bola-laranja-fundo"></div>
+            <div class="bola-amarela"><div class="texto-logo">CREATIVE STUDIO</div></div>                  
+
+        </div>
+        
+    </body>
+</html>

@@ -14,18 +14,18 @@
             width: 100%;
             height: 100%;
             background-color: #F4F4F4;
-            
 
-        }   
+
+        }
 
 
         #body {
-            
+
             background-color: #F4F4F4;
             font-family: arial;
             width: 60%;
             margin: auto;
-            position:relative;
+            position: relative;
         }
 
 
@@ -34,11 +34,11 @@
             padding: 10px 0;
             width: 100%;
             background-color: black;
-            
+
 
         }
 
-      
+
 
         #email {
             padding-top: 15px;
@@ -46,19 +46,20 @@
             color: #989898;
             text-align: right;
             font-size: 15px;
-            line-height: 15px;;
+            line-height: 15px;
+            ;
 
         }
 
         .topomenu {
 
-            height: 150px;            
-            
+            height: 150px;
+
         }
 
         .topomenudireita {
             float: right;
-            
+
 
         }
 
@@ -68,7 +69,7 @@
             margin: 0;
             padding: 0;
             list-style: none;
-            
+
 
         }
 
@@ -76,7 +77,7 @@
 
             padding-left: 25px;
             line-height: 150px;
-            font-size: 15px;
+            font-size: 12px;
             font-weight: bold;
             float: left;
             line-height: 150px;
@@ -94,352 +95,519 @@
 
         }
 
-        #bola-laranja
+        .bola-laranja {
 
-        {   
             height: 150px;
             width: 150px;
+            background-color: orange;
             border-radius: 50%;
-            background-color: #FE9300;
-            float: left;
+            position: relative
+        }
+
+        .bola-branca {
+            height: 100px;
+            width: 100px;
+            background: radial-gradient(orange 50%, white 50%);
+            border-radius: 50%;
+            position: absolute;
+            left: 25px;
+            top: 25px;
+
 
         }
 
-       .gap-25 {
+        .bola-amarela {
+            height: 100px;
+            width: 100px;
+            background: linear-gradient(to right, rgba(255, 255, 0, 0.6), rgba(255, 255, 0, 0.1));
+            position: absolute;
+            left: 85px;
+            top: 25px;
+            border-radius: 50%;
+
+
+        }
+
+        .bola-laranja-fundo {
+            height: 100px;
+            width: 100px;
+            background: linear-gradient(to right, orange 30%, transparent 60%);
+            position: absolute;
+            left: 85px;
+            top: 25px;
+            border-radius: 50%;
+
+        }
+
+        .texto-logo {
+
+            font-size: 20px;
+            font-family: arial;
+            line-height: 20px;
+            font-weight: bold;
+            position: absolute;
+            left: 15px;
+            top: 30px;
+            color: black;
+        }
+
+        .gap-25 {
             height: 25px;
-       }
+        }
 
-       #linha {
-           height: 2px;
-           background-color: #C0C0C0;
-       }
+        #linha {
+            height: 2px;
+            background-color: #C0C0C0;
+        }
 
-       #container-250{
+        #container-250 {
 
-        height: 350px;
-        background-image: linear-gradient(to right,#F29B00, #E25400);       
-        color:white;
-        font-size: 60px;
-        font-weight: bold;        
-        padding-top: 20px;
-        box-sizing: border-box;
-        text-transform: uppercase;
-        text-align: left;
-        position:relative;        
-        
-        
-       }
+            height: 350px;
+            background-image: linear-gradient(to right, #F29B00 50%, #E25400);
+            color: white;
+            font-size: 60px;
+            font-weight: bold;
+            padding-top: 20px;
+            box-sizing: border-box;
+            text-transform: uppercase;
+            text-align: left;
+            position: relative;
 
-       #width-50-left {           
-           display: block; 
-           width: 50%;
-           letter-spacing: 0.05em;                    
-           position:absolute;   
-           box-sizing: border-box;
-           padding-left: 10px;        
-                    
-       }
 
-       #width-50-right {
-           
-           width: 50%;          
-           float:right;
-           height:100%; 
-           box-sizing: border-box; 
-           position:relative;       
-       }
+        }
 
-       #container-preto {
-           
-           width:100%;
-           background-color: black;
-           height: 30px;           
-           margin: auto;           
-           bottom: 0px;
-           box-sizing: border-box;           
-        
-       }
+        #width-50-left {
+            display: block;
+            width: 50%;
+            letter-spacing: 0.05em;
+            position: absolute;
+            box-sizing: border-box;
+            padding-left: 10px;
 
-       #container-cinza {
-           height:100%;
-           width:65%;
-           background-color: #C0C0C0;           
-           position:absolute;           
-           bottom: 0;
-           right: 0;
-           
+        }
 
-       }
+        #width-50-right {
 
-       #container-azul {
+            width: 50%;
+            float: right;
+            height: 100%;
+            box-sizing: border-box;
+            position: relative;
+        }
 
-           height:80%;           
-           width: 35%;            
-           background-color: #1e4f78;
-           position:absolute;
-           bottom: 0; 
-           left:-35%;         
-       }
+        #container-preto {
 
-       h3 {
-           font-size:15px;
-       }
+            width: 100%;
+            background-color: black;
+            height: 30px;
+            margin: auto;
+            bottom: 0px;
+            box-sizing: border-box;
 
-      
+        }
 
-       #texto {
-           display:grid;
-           grid-template-columns: 33% 33% auto;
-           column-gap: 30px;
-           height: 400px;
-           text-align:justify;
-           
+        #container-cinza {
+            height: 100%;
+            width: 65%;
+            background-color: #C0C0C0;
+            position: absolute;
+            bottom: 0;
+            right: 0;
 
-       }
 
-       .texto-interno {                
-           
-           box-sizing: border-box;
-           padding:5px;                        
+        }
 
-       }
+        #container-azul {
 
-       .container-preto-10 {
-           
-           width:100%;
-           background-color: black;
-           height: 10px;           
-           margin: auto;          
-           box-sizing: border-box;
-       }  
+            height: 80%;
+            width: 35%;
+            background-color: #1e4f78;
+            position: absolute;
+            bottom: 0;
+            left: -35%;
+        }
 
-       #container-bloco {
+        h3 {
+            font-size: 15px;
+        }
 
-        display:grid;
-        grid-template-columns: 22% 22% 22% 22%;
-        column-gap: 4%;
-        height: 120px;
-           
-       }
 
-       .bloco {
-           
-           height:120px;
-       }
 
-       #container-rodape {
-           width:100%;
-           height:250px;           
-           position:relative;
-           
-       }
+        #texto {
+            display: grid;
+            grid-template-columns: 32% 32% 32%;
+            column-gap: 20px;
+            height: 450px;
+            text-align: justify;
+            box-sizing: border-box;
 
-       #coluna-esquerda {
 
-           position:absolute;
-           left:0;
-           width:76%;
-           height:200px;
-           
-           
-           
-          
-           
-       }
+        }
 
-       #coluna-direita {
-           position:absolute;
-           width:22%;
-           left:78%;
-           height:200px;
-           
-           
-           
-       }
+        .texto-interno {
 
-       .bolas {
-           height:30px;
-           width:30px;
-           border-radius:50%;  
-           display:inline-block;
-           margin-right:10px;       
-                  
-      }
+            box-sizing: border-box;
+            padding: 5px;
 
-      #footer {
+        }
+
+        .more {
+
+            display: none;
+        }
+
+
+
+
+        .assinatura-testimonial {
+            font-weight: bold;
+            font-style: italic;
+            text-align: left;
+            display: inline-block;
+        }
+
+        .container-preto-10 {
+
+            width: 100%;
+            background-color: black;
+            height: 10px;
+            margin: auto;
+            box-sizing: border-box;
+        }
+
+        #container-bloco {
+
+            display: grid;
+            grid-template-columns: 22% 22% 22% 22%;
+            column-gap: 4%;
+            height: 120px;
+
+        }
+
+        .bloco {
+
+            height: 120px;
+        }
+
+        #container-rodape {
+            width: 100%;
+            height: 250px;
+            position: relative;
+
+        }
+
+        #coluna-esquerda {
+
+            position: absolute;
+            left: 0;
+            width: 76%;
+            height: 200px;
+
+
+
+
+
+        }
+
+        #coluna-direita {
+            position: absolute;
+            width: 22%;
+            left: 78%;
+            height: 200px;
+
+
+
+        }
+
+        .bolas {
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 8px;
+
+        }
+
+        #footer {
+
             position: fixed;
             bottom: 0;
             height: 60px;
             width: 100%;
             background-color: #E2E2E2;
             margin: 0;
-            padding: 0;            
-            color:#5C5C5C;
-            line-height:1.5;
-            
+            padding: 0;
+            color: #5C5C5C;
+
+
+
+
+        }
+
+        #texto-footer a {
+            color: #5C5C5C;
 
         }
 
         #texto-footer {
-            width:60%;
-            margin:auto;
-           
+
+            padding-top: 15px;
+            width: 60%;
+            font-family: arial;
+            font-size: 11px;
+            margin: auto;
+            height: 60px;
+            line-height: 1.2em;
+            box-sizing: border-box;
         }
-        
-             
-       
-       
-      
+
+        .logo-footer {
+            position: relative;
+            float: right;
+
+        }
+
+        .bola-laranja-footer {
+            left: -42px;
+            top: -15px;
+            height: 36px;
+            width: 36px;
+            background-color: orange;
+            border-radius: 50%;
+            position: absolute;
 
 
-  
+        }
+
+        .bola-branca-footer {
+            height: 24px;
+            width: 24px;
+            background: radial-gradient(orange 50%, white 50%);
+            border-radius: 50%;
+            position: absolute;
+            left: 6px;
+            top: 6px;
 
 
+
+        }
+
+        .bola-amarela-footer {
+            height: 24px;
+            width: 24px;
+            background: linear-gradient(to right, rgba(255, 255, 0, 0.6), rgba(255, 255, 0, 0.1));
+            position: absolute;
+            border-radius: 50%;
+            left: 16px;
+            top: 6px;
+
+
+
+        }
+
+        .bola-laranja-fundo-footer {
+            height: 24px;
+            width: 24px;
+            background: linear-gradient(to right, orange 30%, transparent 60%);
+            position: absolute;
+            border-radius: 50%;
+            left: 16px;
+            top: 6px;
+
+        }
+
+        .texto-logo-footer {
+
+            font-size: 6px;
+            font-family: arial;
+            line-height: 1.2em;
+            font-weight: bold;
+            position: absolute;
+            left: 7px;
+            top: 6px;
+            color: black;
+
+        }
     </style>
 </head>
 
 <body>
 
-    
-
-        <div id="header"></div>
-
-        <div id="body">
 
 
+    <div id="header"></div>
 
-
-            <div id="email">info@CreativeStudio.com</div>
+    <div id="body">
 
 
 
-            <div class="topomenu">
 
-                <div class="topomenudireita">
-                    <ul>
-                        <li><a style="color:black" href="index.html" target="_blank">HOME</a></li>
-                        <li><a href="about.html" target="_blank">ABOUT US</a></li>
-                        <li><a href="portfolio.html" target="_blank">PORTFOLIO</a></li>
-                        <li><a href="service.html" target="_blank">SERVICES</a></li>
-                        <li><a href="blog.html" target="_blank">BLOG</a></li>
-                        <li><a href="contact" target="_blank">CONTACT US</a></li>
+        <div id="email">info@CreativeStudio.com</div>
 
-                    </ul>
+
+
+        <div class="topomenu">
+
+            <div class="topomenudireita">
+                <ul>
+                    <li><a style="color:black" href="index.html" target="_blank">HOME</a></li>
+                    <li><a href="about.html" target="_blank">ABOUT US</a></li>
+                    <li><a href="portfolio.html" target="_blank">PORTFOLIO</a></li>
+                    <li><a href="service.html" target="_blank">SERVICES</a></li>
+                    <li><a href="blog.html" target="_blank">BLOG</a></li>
+                    <li><a href="contact" target="_blank">CONTACT US</a></li>
+
+                </ul>
+            </div>
+            <div class="bola-laranja">
+                <div class="bola-branca"></div>
+                <div class="bola-laranja-fundo"></div>
+                <div class="bola-amarela">
+                    <div class="texto-logo">CREATIVE STUDIO</div>
                 </div>
-                <div id="bola-laranja"></div>
+
+            </div>
+        </div>
+
+
+
+        <div class="gap-25"></div>
+        <hr>
+        <div class="gap-25"></div>
+
+        <div id=container-250>
+            <div id="width-50-left">CREATIVE<br>DESIGN<br>SERVICES<br>
+                <div id="gap-25"></div>
+                <div id="container-preto"></div>
             </div>
 
-            
+            <div id="width-50-right">
+                <div id="container-cinza">
+                    <div id="container-azul"></div>
+                </div>
 
-            <div class="gap-25"></div>
-            <hr>
-            <div class="gap-25"></div>
 
-            <div id=container-250>
-                <div id="width-50-left">CREATIVE<br>DESIGN<br>SERVICES<br>
-                    <div id="gap-25"></div>
-                    <div id="container-preto"></div></div>  
+            </div>
+        </div>
 
-                <div id="width-50-right">
-                    <div id="container-cinza"><div id="container-azul"></div></div>
-                    
 
+        <div class="gap-25"></div>
+        <hr>
+
+
+        <div id="texto">
+
+            <div class="texto-interno">
+                <h3>&rarr; ABOUT US</h3>
+                <div class="container-preto-10"></div>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur quis ex dui. Etiam sed
+                pellentesque diam. Suspendisse ut facilisis nunc. Ut cursus sollicitudin enim, eget efficitur neque
+                euismod ac. Nullam pretium tempus lorem nec blandit.<br><br>
+                <div id="read" style="color:orange; font-weight:bold">&rarr; READ</div>
+                <div class="more">Morbi leo erat, suscipit ut sem a, tempus
+                    consectetur nisi. Phasellus facilisis mollis facilisis. Vestibulum nec mauris pharetra, tincidunt
+                    nulla bibendum, lobortis ex. </div>
+
+            </div>
+
+            <div class="texto-interno">
+                <h3>&rarr; OUR BENEFITS</h3>
+                <div class="container-preto-10"></div>
+                <input type="checkbox" />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur quis ex dui.
+                Etiam sed pellentesque diam. Suspendisse ut facilisis nunc.<br><br>
+                <input type="checkbox" />Ut cursus sollicitudin enim, eget efficitur neque euismod ac. Nullam pretium
+                tempus lorem nec blandit. Morbi leo erat, suscipit ut sem a, tempus consectetur nisi.<br><br>
+                <input type="checkbox" />Phasellus facilisis mollis facilisis. Vestibulum nec mauris pharetra, tincidunt
+                nulla bibendum, lobortis ex. Pellentesque habitant morbi tristique senectus et netus et malesuada fames
+                ac turpis egestas.<br><br>
+            </div>
+
+            <div class="texto-interno">
+
+                <h3>&rarr; TESTIMONIALS</h3>
+                <div class="container-preto-10"></div>
+                Sed eget lorem id nunc tristique congue id at velit. Vestibulum ante ipsum primis in faucibus orci
+                luctus et ultrices posuere cubilia curae; Morbi dolor est, commodo sit amet semper non, ornare a
+                enim. Curabitur ac hendrerit enim. Pellentesque non est efficitur, pretium sem quis, pellentesque
+                orci. Cras malesuada odio vel mi elementum euismod vitae at urna.
+                <br><br>
+                <div class="assinatura-testimonial">Rafi, Graphicsfuel.com
                 </div>
             </div>
-            
-            
-            <div class="gap-25"></div>
-            <hr>
-            <div class="gap-25"></div>
+        </div>
 
-            <div id="texto">
 
-                <div class="texto-interno">
-                    <h3>&rarr; ABOUT US</h3> 
-                    <div class="container-preto-10"></div>                    
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur quis ex dui. Etiam sed pellentesque diam. Suspendisse ut facilisis nunc. Ut cursus sollicitudin enim, eget efficitur neque euismod ac. Nullam pretium tempus lorem nec blandit. Morbi leo erat, suscipit ut sem a, tempus consectetur nisi. Phasellus facilisis mollis facilisis. Vestibulum nec mauris pharetra, tincidunt nulla bibendum, lobortis ex. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-                </div> 
+        <div class="gap-25"></div>
+        <hr>
 
-                <div class="texto-interno">
-                    <h3>&rarr; OUR BENEFITS</h3> 
-                    <div class="container-preto-10"></div> 
-                    <input type="checkbox">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur quis ex dui. Etiam sed pellentesque diam. Suspendisse ut facilisis nunc.</input><br><br> 
-                    <input type="checkbox">Ut cursus sollicitudin enim, eget efficitur neque euismod ac. Nullam pretium tempus lorem nec blandit. Morbi leo erat, suscipit ut sem a, tempus consectetur nisi.</input><br><br>
-                    <input type="checkbox">Phasellus facilisis mollis facilisis. Vestibulum nec mauris pharetra, tincidunt nulla bibendum, lobortis ex. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</input><br><br>
-                </div> 
 
-                <div class="texto-interno">
-                    
-                    <h3>&rarr; TESTIMONIALS</h3>
-                    <div class="container-preto-10"></div>
-                    <p>Sed eget lorem id nunc tristique congue id at velit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Morbi dolor est, commodo sit amet semper non, ornare a enim. Curabitur ac hendrerit enim. Pellentesque non est efficitur, pretium sem quis, pellentesque orci. Cras malesuada odio vel mi elementum euismod vitae at urna. Integer elementum maximus odio sit amet semper. Duis finibus at libero sit amet egestas.</p></div>
-                </div>
-
-                
-            <div class="gap-25"></div>
-            <hr>
-            <div class="gap-25"></div>
-
-            <h3>&rarr; OUR PORTFOLIO</h3>
-         <div id="container-bloco">            
-            <div class="bloco" style="background-color:#67B7FC;"></div> 
-            <div class="bloco" style="background-color:#9D2701;"></div> 
-            <div class="bloco" style="background-color:#11898A;"></div> 
+        <h3>&rarr; OUR PORTFOLIO</h3>
+        <div id="container-bloco">
+            <div class="bloco" style="background-color:#67B7FC;"></div>
+            <div class="bloco" style="background-color:#9D2701;"></div>
+            <div class="bloco" style="background-color:#11898A;"></div>
             <div class="bloco" style="background-color:#013D83;"></div>
-         </div>
-         
-         
-         <div class="gap-25"></div>
-            <hr>
-            <div class="gap-25"></div>
+        </div>
 
-        
+
+        <div class="gap-25"></div>
+        <hr>
+        <div class="gap-25"></div>
+
+
         <div id="container-rodape">
-                <div id="coluna-esquerda"><h3>&rarr; OUR PORTFOLIO</h3>
-                   <p> Mauris aliquet felis lacus, id pulvinar justo pellentesque sed. Aliquam condimentum diam at pharetra condimentum. Nunc velit diam, rhoncus nec mauris nec, lacinia laoreet augue. Cras a turpis erat. Sed a pretium tellus. In congue feugiat dignissim. Curabitur commodo molestie elementum. Nulla purus tellus, faucibus at est aliquam, mollis sagittis nulla.</p></div>                  
-                <div id="coluna-direita"><h3>&rarr; CONECT WITH US</h3>
+            <div id="coluna-esquerda">
+                <h3>&rarr; OUR PORTFOLIO</h3>
+                <p> Mauris aliquet felis lacus, id pulvinar justo pellentesque sed. Aliquam condimentum diam at pharetra
+                    condimentum. Nunc velit diam, rhoncus nec mauris nec, lacinia laoreet augue. Cras a turpis erat. Sed
+                    a pretium tellus. In congue feugiat dignissim. Curabitur commodo molestie elementum. Nulla purus
+                    tellus, faucibus at est aliquam, mollis sagittis nulla.</p>
+            </div>
+            <div id="coluna-direita">
+                <h3>&rarr; CONECT WITH US</h3>
                 <div class="bolas" style="background-color:#88E1FF"></div>
                 <div class="bolas" style="background-color:#6B83B1;"></div>
                 <div class="bolas" style="background-color:#DADADA;"></div>
                 <div class="bolas" style="background-color:#FDA84D;"></div>
             </div>
-        
+
 
             <div class="gap-25"></div>
             <div class="gap-25"></div>
             <div class="gap-25"></div>
-
-            
-
-
-            
-            
-        </div >
-
-    </div>           
+        </div>
+    </div>
 
 
+    <div id="footer">
 
-        
+        <div id="texto-footer">
+            <a href="index.html" target="_blank">HOME</a> |
+            <a href="about.html" target="_blank">ABOUT US</a> |
+            <a href="portfolio.html" target="_blank">PORTFOLIO</a> |
+            <a href="service.html" target="_blank">SERVICES</a> |
+            <a href="blog.html" target="_blank">BLOG</a> |
+            <a href="contact" target="_blank">CONTACT US</a>
+            <br>@2010 CreativeStudio. All Rights Reverved
 
-       
-                  
-   <div id="footer">
-       <div id="texto-footer">
-       Home | About US | Portfolio | Services | Blog | Contact Us<br> @2010 CreativeStudio. All Rights Reverved
-       <div>
-   </div>
+            <div class="logo-footer">
 
-     
+                <div class="bola-laranja-footer">
+                    <div class="bola-branca-footer"></div>
+                    <div class="bola-laranja-fundo-footer"></div>
+                    <div class="bola-amarela-footer">
+                        <div class="texto-logo-footer">CREATIVE STUDIO</div>
+                    </div>
 
-    
+                </div>
+            </div>
+        </div>
+    </div>
 
-    
-    
+
+
+
 
 </body>
-
-
-
 
 </html>
