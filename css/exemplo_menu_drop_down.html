@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title> Menu Dropdown em css </title>
+        <meta charset="utf-8">
+        <style> 
+        
+        ol.menu {
+            position:relative;
+        }
+
+        ol.menu ol {
+            display: none;
+            
+        }
+
+        ol.menu li:hover > ol {
+            display: block;
+            cursor:pointer;
+
+        }
+
+        ol.menu li:hover {
+            background-color: red;
+        }
+
+
+        /*tag ol e classe menu*/  
+        ol.menu, ol.menu ol {
+            list-style-type: none;
+            padding:0;            
+        }
+
+        ol.menu > li {
+            float:left;
+            margin-left: -1px;
+            
+        }
+
+        /*necessário definir altura e largura*/
+        ol.menu li {
+
+            background-color: yellow;
+            border: 1px solid green;
+            width:100px;
+            height: 20px;
+            
+
+
+        }
+
+        ol.menu > li > ol {
+            margin-top: 2.5px;
+            margin-left: -1px;;
+
+        }
+
+        ol.menu li li {
+            margin-top: -1px;
+        }
+
+        ol.menu ol ol {
+
+            margin-left: 100%;
+            margin-top: -19px;
+
+        }
+
+        #texto {
+                      
+            margin-top: 20px;           
+            border: 2px solid blue;
+            border-radius: 15px;           
+            text-indent: 20px;
+            padding: 20px;
+            letter-spacing: 0.1em;
+        }
+
+        #gap {
+            height: 20px;
+            width: 100%;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+       
+
+
+        </style>
+    </head>
+    
+    
+
+    <body>
+
+            <h3>Menu drop apenas</h3>
+
+            <div id="menutopo">
+        
+            <ol class="menu">
+            <li>Item 1</li>
+            <li>Item 2
+                <ol>
+                    <li>Item 2.1</li>
+                    <li>Item 2.2
+                        <ol>
+                            <li>Item 2.2.1</li>
+                            <li>Item 2.2.2</li>
+                            <li>Item 2.2.3</li>
+                            <li>Item 2.2.4</li>
+                        </ol>
+                    </li>
+                    <li>Item 2.3</li>
+                </ol>
+            </li> 
+            <li>Item 3</li>        
+            <li>Item 4
+                <ol>
+                    <li>Item 4.1</li>
+                    <li>Item 4.2</li>
+                </ol>
+            </li>
+        </ol>
+
+    </div>
+    <div id="gap"></div>
+
+        <div id="texto">
+            <h2>TÍTULO DO TEXTO</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim, magni voluptatum. Animi commodi rerum doloribus illum esse voluptatem fuga quisquam totam suscipit facere veniam quaerat, ut eveniet dicta repudiandae ex repellat sed recusandae cumque. Error vitae earum expedita numquam, laudantium quisquam porro sed reprehenderit cumque odio ut laborum labore assumenda nesciunt delectus vel excepturi voluptatem explicabo id? Quam nam provident laboriosam eligendi beatae perspiciatis! Veniam atque animi id cupiditate consectetur ea, iste dolorum enim magnam ullam esse a expedita incidunt nisi mollitia sequi cumque eos exercitationem? Velit earum quam sit, alias repellat dolores sapiente porro laboriosam quo repudiandae. Unde, quae.</p>
+            
+        </div>
+       
+            
+
+
+        
+        
+    </body>
+</html>

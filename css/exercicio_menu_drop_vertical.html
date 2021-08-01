@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title> Menu Dropdown em css </title>
+        <meta charset="utf-8">
+        <style> 
+        
+        ol.menu {
+            position:relative;
+            font-size: 15px;
+        }
+
+        ol.menu ol {
+            display: none;
+            
+        }
+
+        ol.menu li:hover > ol {
+            display: block;
+            cursor:pointer;
+
+        }
+
+        ol.menu li:hover {
+            background-color: orange;
+        }
+
+
+        /*tag ol e classe menu*/  
+        ol.menu, ol.menu ol {
+            list-style-type: none;
+            padding:0;            
+        }
+
+        ol.menu > li {
+            margin-top: 1px      
+            
+            
+        }
+
+        /*necessário definir altura e largura*/
+        ol.menu li {
+
+            background-color: silver;
+            
+            width:160px;
+            height: 20px;       
+           
+            
+
+
+        }
+
+        ol.menu > li > ol {
+            margin-top: -18px;
+            margin-left: -1px;
+            
+
+        }
+
+        ol.menu li li {
+            
+            margin-left: 100%;
+            margin-top: 1px;
+           
+        }
+
+        ol.menu ol ol {
+            
+            margin-top: -18px;
+                     
+            
+
+        }
+
+        ol.menu ol ol > li{           
+            
+            background-color: aqua;           
+            
+
+        }
+
+       
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+       
+
+
+        </style>
+    </head>
+    
+    
+
+    <body>
+            
+
+            <div id="menutopo">
+        
+            <ol class="menu">
+            <li>Home</li>
+            <li>About</li> 
+            <li>Contact</li>        
+            <li>FAQ
+                <ol>
+                    <li>Sub Menu Item 1
+                        <ol>
+                            <li>Sub Sub Menu Item 1.1</li>
+                            <li>Sub Sub Menu Item 1.2</li>
+                            <li>Sub Sub Menu Item 1.3</li>
+                            <li>Sub Sub Menu Item 1.4</li>
+                        </ol>
+                    </li>
+                    <li>Sub Menu Item 2
+                        <ol>
+                            <li>Sub Sub Menu Item 2.1</li>
+                            <li>Sub Sub Menu Item 2.2</li>
+                            <li>Sub Sub Menu Item 2.3</li>
+                            <li>Sub Sub Menu Item 2.4</li>
+                        </ol>
+                    </li>                    
+                </ol>
+             <li>News</li>           
+        </ol>
+
+    </div>
+    <div id="gap"></div>
+
+      
+            
+
+
+        
+        
+    </body>
+</html>
