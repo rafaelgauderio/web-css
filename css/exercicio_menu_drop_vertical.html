@@ -7,7 +7,8 @@
         
         ol.menu {
             position:relative;
-            font-size: 15px;
+            font-size: 18px;            
+            color: white;
         }
 
         ol.menu ol {
@@ -18,11 +19,16 @@
         ol.menu li:hover > ol {
             display: block;
             cursor:pointer;
+            text-decoration: underline;
+            z-index: +2;
+           
 
         }
 
         ol.menu li:hover {
+            
             background-color: orange;
+            display: block;
         }
 
 
@@ -33,7 +39,8 @@
         }
 
         ol.menu > li {
-            margin-top: 1px      
+            margin-top: 1px;
+            padding-left: 5px; 
             
             
         }
@@ -41,10 +48,11 @@
         /*necessário definir altura e largura*/
         ol.menu li {
 
-            background-color: silver;
-            
-            width:160px;
-            height: 20px;       
+            background-color: #666666;            
+            width:180px;
+            height: 30px;
+            line-height: 30px;
+                         
            
             
 
@@ -52,33 +60,48 @@
         }
 
         ol.menu > li > ol {
-            margin-top: -18px;
-            margin-left: -1px;
-            
+            margin-top: -25px;
+            margin-left: -1px;          
+                     
+
+        }       
+
+        ol.menu > li > ol > li {
+
+           position: relative;
+           background-color: #999999;
+           padding-left: 5px;           
+                    
 
         }
-
+      
+       
         ol.menu li li {
             
-            margin-left: 100%;
-            margin-top: 1px;
+            margin-left: 80%;
+                    
            
         }
 
         ol.menu ol ol {
             
-            margin-top: -18px;
+            margin-top: -25px;
+            
                      
             
 
         }
 
-        ol.menu ol ol > li{           
-            
-            background-color: aqua;           
+        ol.menu ol ol > li{  
+
+            position: relative;
+            background-color: #0099CC;
+            z-index: +2;
+            padding-left: 5px;                  
             
 
         }
+     
 
        
 
@@ -97,7 +120,7 @@
     <body>
             
 
-            <div id="menutopo">
+            
         
             <ol class="menu">
             <li>Home</li>
@@ -125,7 +148,7 @@
              <li>News</li>           
         </ol>
 
-    </div>
+   
     <div id="gap"></div>
 
       
