@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Tabela</title>
+    <style>
+        html {
+            height: 100%;
+        }
+        
+        body {
+            height: 100%;
+            margin: 0;
+            perspective: 400px;
+        }
+        
+        table {
+            margin: auto;
+            border: 3px dashed green;
+            border-radius: 50%;
+            background-color: hsl(0, 100%, 30%);
+            color: orange;
+            border-spacing: 5px;
+            caption-side: bottom;
+        }
+        
+        td {
+            border: 1px solid yellow;
+        }
+        
+        th {
+            border: 1px solid #AFE;
+            padding: 2px;
+        }
+        
+        .quadro {
+            width: 20px;
+            height: 20px;
+            background-color: green;
+            margin: auto;
+            border-radius: 2px;
+            text-align: center;
+            line-height: 50px;
+            border: 2px solid black;
+            display: inline-block;
+            margin: 1px;
+            margin-top: -3px;
+        }
+        
+        .bola {
+            background-color: red;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            border: 1px solid black;
+            display: inline-block;
+            margin: 2px;
+        }
+        
+        #logo,
+        img {
+            width: 100px;
+            margin: auto;
+            animation: rotacao 2s infinite alternate;
+        }
+        
+        img {
+            margin-left: 0;
+            animation: move 10s infinite linear alternate, rolando 1s infinite alternate;
+        }
+        
+        .gap {
+            height: 50px;
+        }
+        
+        @keyframes rotacao {
+            to {
+                transform: rotateX(359deg);
+            }
+        }
+        
+        @keyframes move {
+            to {
+                margin-left: 85%;
+            }
+        }
+        
+        @keyframes rolando {
+            to {
+                transform: rotate(359deg);
+            }
+        }
+        
+        iframe {
+            visibility: hidden;
+        }
+    </style>
+</head>
+
+<body>
+
+    <img src="https://i.redd.it/6k3ru1h6lb241.png">
+    <div class="gap"></div>
+    <img src="https://www.embarcados.com.br/wp-content/uploads/2015/02/imagem-de-destaque-39.png">
+    <div class="gap"></div>
+    <img src="https://www.embarcados.com.br/wp-content/uploads/2015/02/imagem-de-destaque-39.png">
+    <div class="gap"></div>
+    <div id="logo">
+        <div class="bola"></div>
+        <div class="quadro"></div>
+        <div class="quadro"></div>
+        <br>
+        <div class="quadro"></div>
+        <div class="quadro"></div><br>
+        <div class="quadro"></div>
+        <div class="quadro"></div>
+        <div class="quadro"></div><br>
+        <div class="quadro"></div>
+        <div class="quadro"></div>
+    </div>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/3qBS6uHzFtc?autoplay=true" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</body>
+
+</html>
